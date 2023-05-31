@@ -71,6 +71,8 @@ section .form-cont textarea{
 }
 
 .quick-links{
+    background-color: black;
+    color: white;
     width: 80%;
     margin: auto;
     padding: 30px;
