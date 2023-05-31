@@ -1,0 +1,50 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.hero{
+    background-color: red;
+    height: 100vh;
+}
+
+/* NavBar start */
+nav{
+    display: flex;
+    height: 5%;
+    justify-content: space-between;
+    background-color: green;
+}
+
+.logo{
+    display: flex;
+    background-color: blue;
+    align-items: center;
+    width: 10%;
+    justify-content: center;
+}
+
+.quick{
+    width: 30%;
+    align-items: center;
+    justify-content: space-around;
+    background-color: blue;
+    display: flex;
+}
+
+/* NavBar End */
+
+
+.hero-main{
+    background-color: red;
+    height: 95%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ctn-hero{
+    background-color: green;
+    height: 40%;
+}
