@@ -59,7 +59,7 @@ div.par1{
     justify-content: space-around;
     width: 100%;
     display: flex;
-    background-image: url('../Assets/mentalHealth2.jpg');
+    background-image: url('../assets/mentalHealth2.jpg');
 }
 
 div.par1 p{
@@ -109,7 +109,7 @@ section{
 div.arc{
     display: flex;
     flex-direction: row;
-    background-image: url('../Assets/award_Man.png');
+    background-image: url('../assets/award_Man.png');
     background-size: cover;
     height: 700px;
 }
@@ -200,7 +200,7 @@ footer p{
      }
     
      div.par1{
-        background-image: url('../Assets/mentalHealth2.jpg');
+        background-image: url('../assets/mentalHealth2.jpg');
         background-size: 1024px;
     }
     
@@ -222,7 +222,7 @@ footer p{
     div.arc{
         display: flex;
         flex-direction: column;
-        background-image: url('../Assets/award_Man.png');
+        background-image: url('../assets/award_Man.png');
         background-size: cover;
         height: auto; 
     }
@@ -271,7 +271,7 @@ footer p{
         font-size: 2em;
     }
     div.par1{
-        background-image: url('../Assets/mentalHealth2.jpg');
+        background-image: url('../assets/mentalHealth2.jpg');
         background-size: 330px 410px;
         height: 300px;
     }
@@ -296,7 +296,7 @@ footer p{
         font-size: 2em;
     }
     div.par1{
-        background-image: url('../Assets/mentalHealth2.jpg');
+        background-image: url('../assets/mentalHealth2.jpg');
         background-size: 330px 410px;
         height: 300px;
     }
@@ -308,7 +308,7 @@ footer p{
 }
 @media only screen and (max-width: 430px){
     div.par1{
-        background-image: url('../Assets/mentalHealth2.jpg');
+        background-image: url('../assets/mentalHealth2.jpg');
         background-size: 330px 410px;
         height: 300px;
     }
