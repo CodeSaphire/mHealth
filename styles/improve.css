@@ -1,0 +1,50 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.imprCards {
+    display: flex;
+    height: 560px;
+    width: 1310px;
+    justify-content: space-around;
+    align-items: center;
+    margin: 30px 15px 50px 25px;
+    /* flex-wrap: wrap; */
+}
+
+.unit1 {
+    width: 350px;
+    height: 540px;
+    display: flex;
+    padding: 20px;
+    box-shadow: 3px 3px 25px 1px rgb(25, 25, 25);
+    /* box-shadow: 0px 0px 5px rgb(25, 25, 25); */
+    flex-direction: column;
+    border-radius: 10px;
+}
+
+.unit2 {
+    width: 350px;
+    height: 540px;
+    display: flex;
+    padding: 20px;
+    box-shadow: 3px 3px 25px 1px rgb(25, 25, 25);
+    flex-direction: column;
+    border-radius: 10px;
+}
+
+.imprImage img {
+    width: 100%;
+    /* height:100px; */
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 10px;
+}
+
+.imprTitle {
+    text-align: center;
+    font-weight: bold;
+    margin-top: 20px;
+}
