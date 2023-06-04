@@ -19,7 +19,7 @@ body {
     left: 0; */
     width: 100%;
     height: 100%;
-    background-image: url('./assets/f2.jpg');
+    background-image: url('./assets/closeFace.jpg');
     background-size: cover;
     background-position: center;
     /* transform: translateZ(0); */
@@ -79,6 +79,10 @@ body {
     text-decoration: none;
   }
 
+
+
+
+  
   /* Responsive Styles */
   @media (max-width: 767px) {
     .navbar-links.show {

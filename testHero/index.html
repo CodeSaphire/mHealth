@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Hero Section</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="styleFoot.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
 <body>
   <section class="hero">
@@ -102,7 +104,7 @@
       // Parallax effect on scroll
       $(window).scroll(function() {
         var scrollPos = $(this).scrollTop();
-        $('.hero-image').css('transform', 'translateY(' + scrollPos * 0.3 + 'px)');
+        $('.hero-image').css('transform', 'translateY(' + scrollPos * .5 + 'px)');
       });
 
       // Toggle navbar links on mobile
