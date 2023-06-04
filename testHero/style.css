@@ -1,0 +1,138 @@
+/* Base Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+  }
+
+  /* Hero Section Styles */
+  .hero {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+  }
+
+  .hero-image {
+    /* position: absolute;
+    top: 0;
+    left: 0; */
+    width: 100%;
+    height: 100%;
+    background-image: url('./assets/f2.jpg');
+    background-size: cover;
+    background-position: center;
+    /* transform: translateZ(0); */
+  }
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+
+  .navbar {
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #ffffff;
+    z-index: 999;
+  }
+
+  .navbar-brand {
+    font-size: 24px;
+    color: #333333;
+    text-decoration: none;
+    font-weight: bold;
+
+    background-color: red;
+  }
+
+  .navbar-links {
+    background-color: blue;
+    display: flex;
+    margin-right: 40px;
+    display: none;
+    /* flex-direction: column; */
+    gap: 20px;
+    /* position: absolute; */
+    top: 100%;
+    left: 0;
+    width: 25%;
+    background-color: #ffffff;
+    padding: 20px;
+    transition: opacity 0.3s ease;
+  }
+
+  .navbar-link {
+    font-size: 16px;
+    color: #333333;
+    text-decoration: none;
+  }
+
+  /* Responsive Styles */
+  @media (max-width: 767px) {
+    .navbar-links.show {
+      display: flex;
+      opacity: 1;
+      flex-direction: column;
+      width: 100%;
+    }
+
+    .navbar-toggle {
+      margin-right: 50px;
+      display: block;
+      cursor: pointer;
+      padding: 10px;
+      background-color: transparent;
+      border: none;
+      z-index: 1;
+    }
+
+    .navbar-toggle span {
+      display: block;
+      width: 25px;
+      height: 3px;
+      background-color: #333333;
+      margin-bottom: 5px;
+      transition: transform 0.3s ease;
+    }
+
+    .navbar-toggle.close span:nth-child(1) {
+      transform: translateY(8px) rotate(45deg);
+    }
+
+    .navbar-toggle.close span:nth-child(2) {
+      opacity: 0;
+    }
+
+    .navbar-toggle.close span:nth-child(3) {
+      transform: translateY(-8px) rotate(-45deg);
+    }
+  }
+
+  @media (min-width: 768px) {
+    .navbar-links {
+      /* margin-right: 40px; */
+      background-color: black;
+      display: flex;
+      visibility: visible;
+      gap: 20px;
+      position: static;
+      background-color: transparent;
+      padding: 0;
+    }
+
+    .navbar-toggle {
+      display: none;
+    }
+  }

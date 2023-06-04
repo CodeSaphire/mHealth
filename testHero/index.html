@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hero Section</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <section class="hero">
+    <div class="hero-image"></div>
+    <div class="overlay">
+      <nav class="navbar">
+        <a href="#" class="navbar-brand">Your Brand</a>
+        <button class="navbar-toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <div class="navbar-links">
+          <a href="#" class="navbar-link">Home</a>
+          <a href="#" class="navbar-link">About</a>
+          <a href="#" class="navbar-link">Services</a>
+          <a href="#" class="navbar-link">Contact</a>
+        </div>
+      </nav>
+    </div>
+  </section>
+
+
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      // Parallax effect on scroll
+      $(window).scroll(function() {
+        var scrollPos = $(this).scrollTop();
+        $('.hero-image').css('transform', 'translateY(' + scrollPos * 0.3 + 'px)');
+      });
+
+      // Toggle navbar links on mobile
+      $('.navbar-toggle').click(function() {
+        $('.navbar-links').toggleClass('show');
+        $('.navbar-toggle').toggleClass('close');
+      });
+    });
+  </script>
+</body>
+</html>
