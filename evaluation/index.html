@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mental Health Self-Evaluation</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-beta2/css/bootstrap.min.css">
+  <style>
+    /* Custom Styles */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f7f7f7;
+      margin: 0;
+      padding: 0;
+    }
+
+    .questionnaire-container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 40px;
+      background-color: #fff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      border-radius: 5px;
+    }
+
+    .progress {
+      margin-bottom: 20px;
+    }
+
+    .progress-bar {
+      transition: width 0.3s ease;
+    }
+
+    .question-container {
+      margin-bottom: 40px;
+    }
+
+    .question-number {
+      font-size: 1.2rem;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .question-text {
+      font-size: 1.1rem;
+    }
+
+    .answer-options {
+      margin-top: 10px;
+    }
+
+    .answer-option {
+      margin-bottom: 10px;
+    }
+
+    .btn-next {
+      display: none;
+    }
+
+    .btn-submit {
+      margin-top: 20px;
+    }
+
+    .result-container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 40px;
+      background-color: #fff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      border-radius: 5px;
+      display: none;
+    }
+
+    .result-heading {
+      font-size: 1.5rem;
+      font-weight: bold;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .result-text {
+      font-size: 1.2rem;
+      text-align: center;
+    }
+
+    .personalization-container {
+      margin-bottom: 20px;
+    }
+
+    .personalization-text {
+      font-size: 1.2rem;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="questionnaire-container">
+    <div class="personalization-container">
+      <div class="personalization-text">Please enter your name:</div>
+      <input type="text" id="name-input" class="form-control" placeholder="Your Name">
+      <button class="btn btn-primary btn-name-submit">Submit</button>
+    </div>
+    <div class="progress">
+      <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+    </div>
+    <div class="question-container">
+      <div class="question-number">Question 1 of 5</div>
+      <div class="question-text">Do you often feel overwhelmed or anxious?</div>
+      <div class="answer-options">
+        <div class="custom-control custom-radio">
+          <input type="radio" id="answer1-1" name="answer1" class="custom-control-input" value="yes">
+          <label class="custom-control-label" for="answer1-1">Yes</label>
+        </div>
+        <div class="custom-control custom-radio">
+          <input type="radio" id="answer1-2" name="answer1" class="custom-control-input" value="no">
+          <label class="custom-control-label" for="answer1-2">No</label>
+        </div>
+      </div>
+      <button class="btn btn-primary btn-next">Next</button>
+    </div>
+    <div class="question-container">
+      <div class="question-number">Question 2 of 5</div>
+      <div class="question-text">Do you have trouble sleeping?</div>
+      <div class="answer-options">
+        <div class="custom-control custom-radio">
+          <input type="radio" id="answer2-1" name="answer2" class="custom-control-input" value="yes">
+          <label class="custom-control-label" for="answer2-1">Yes</label>
+        </div>
+        <div class="custom-control custom-radio">
+          <input type="radio" id="answer2-2" name="answer2" class="custom-control-input" value="no">
+          <label class="custom-control-label" for="answer2-2">No</label>
+        </div>
+      </div>
+      <button class="btn btn-primary btn-next">Next</button>
+    </div>
+    <div class="question-container">
+      <div class="question-number">Question 3 of 5</div>
+      <div class="question-text">Do you often experience mood swings?</div>
+      <div class="answer-options">
+        <div class="custom-control custom-radio">
+          <input type="radio" id="answer3-1" name="answer3" class="custom-control-input" value="yes">
+          <label class="custom-control-label" for="answer3-1">Yes</label>
+        </div>
+        <div class="custom-control custom-radio">
+          <input type="radio" id="answer3-2" name="answer3" class="custom-control-input" value="no">
+          <label class="custom-control-label" for="answer3-2">No</label>
+        </div>
+      </div>
+      <button class="btn btn-primary btn-next">Next</button>
+    </div>
+    <div class="question-container">
+      <div class="question-number">Question 4 of 5</div>
+      <div class="question-text">Do you have difficulty concentrating or making decisions?</div>
+      <div class="answer-options">
+        <div class="custom-control custom-radio">
+          <input type="radio" id="answer4-1" name="answer4" class="custom-control-input" value="yes">
+          <label class="custom-control-label" for="answer4-1">Yes</label>
+        </div>
+        <div class="custom-control custom-radio">
+          <input type="radio" id="answer4-2" name="answer4" class="custom-control-input" value="no">
+          <label class="custom-control-label" for="answer4-2">No</label>
+        </div>
+      </div>
+      <button class="btn btn-primary btn-next">Next</button>
+    </div>
+    <div class="question-container">
+      <div class="question-number">Question 5 of 5</div>
+      <div class="question-text">Do you often experience feelings of sadness or hopelessness?</div>
+      <div class="answer-options">
+        <div class="custom-control custom-radio">
+          <input type="radio" id="answer5-1" name="answer5" class="custom-control-input" value="yes">
+          <label class="custom-control-label" for="answer5-1">Yes</label>
+        </div>
+        <div class="custom-control custom-radio">
+          <input type="radio" id="answer5-2" name="answer5" class="custom-control-input" value="no">
+          <label class="custom-control-label" for="answer5-2">No</label>
+        </div>
+      </div>
+      <button class="btn btn-primary btn-submit">Submit</button>
+    </div>
+  </div>
+  <div class="result-container">
+    <div class="result-heading">Results</div>
+    <div class="result-text" id="result-text"></div>
+  </div>
+
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-beta2/js/bootstrap.bundle.min.js"></script>
+  <script>
+    const questionnaireContainer = document.querySelector('.questionnaire-container');
+    const resultContainer = document.querySelector('.result-container');
+    const nameInput = document.getElementById('name-input');
+    const btnNameSubmit = document.querySelector('.btn-name-submit');
+    const btnNext = document.querySelectorAll('.btn-next');
+    const btnSubmit = document.querySelector('.btn-submit');
+    const progressBar = document.querySelector('.progress-bar');
+    const resultText = document.getElementById('result-text');
+
+    let currentQuestion = 0;
+    let score = 0;
+
+    btnNameSubmit.addEventListener('click', () => {
+      const name = nameInput.value.trim();
+      if (name !== '') {
+        questionnaireContainer.classList.add('d-none');
+        resultContainer.classList.add('d-none');
+        progressBar.style.width = '0%';
+        currentQuestion = 0;
+        score = 0;
+        btnNext.forEach(btn => btn.style.display = 'none');
+        btnSubmit.style.display = 'none';
+        resultText.innerHTML = '';
+
+        questionnaireContainer.classList.remove('d-none');
+        progressBar.style.width = '20%';
+        document.querySelector('.question-container').classList.add('d-block');
+      }
+    });
+
+    btnNext.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const selectedOption = document.querySelector(`input[name="answer${currentQuestion + 1}"]:checked`);
+        if (selectedOption) {
+          const selectedValue = selectedOption.value;
+          score += selectedValue === 'yes' ? 1 : 0;
+          currentQuestion++;
+
+          if (currentQuestion < 5) {
+            const progressPercentage = (currentQuestion / 5) * 100;
+            progressBar.style.width = `${progressPercentage}%`;
+
+            const currentQuestionContainer = document.querySelector(`.question-container:nth-child(${currentQuestion})`);
+            currentQuestionContainer.classList.remove('d-block');
+            currentQuestionContainer.classList.add('d-none');
+
+            const nextQuestionContainer = document.querySelector(`.question-container:nth-child(${currentQuestion + 1})`);
+            nextQuestionContainer.classList.add('d-block');
+          } else {
+            questionnaireContainer.classList.remove('d-block');
+            questionnaireContainer.classList.add('d-none');
+            resultContainer.classList.remove('d-none');
+            progressBar.style.width = '100%';
+
+            const percentageScore = (score / 5) * 100;
+            let result = '';
+
+            if (percentageScore <= 20) {
+              result = `Hello, ${nameInput.value}! Based on your answers, it seems like you have a low likelihood of experiencing mental health issues. However, it's always important to prioritize your mental well-being and seek help if needed.`;
+            } else if (percentageScore <= 60) {
+              result = `Hello, ${nameInput.value}! Based on your answers, it seems like you may be experiencing some mild mental health issues. Consider reaching out to a mental health professional for further evaluation and support.`;
+            } else {
+              result = `Hello, ${nameInput.value}! Based on your answers, it seems like you may be experiencing significant mental health issues. It's crucial to seek help from a mental health professional as soon as possible for proper assessment and guidance.`;
+            }
+
+            resultText.innerHTML = result;
+          }
+        }
+      });
+    });
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mental Health Website</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./styles/styleFoot.css">
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg">
+    <a class="navbar-brand" href="#">mHealth</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#home">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#services">Services</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="hero-section" id="home">
+    <div class="overlay"></div> <!-- Add the overlay layer here -->
+    <div class="hero-section-content">
+      <div class="container">
+        <h1>Welcome to Your Mental Health Journey</h1>
+        <p>Find the support and resources you need for a healthy mind and well-being.</p>
+        <a class="btn btn-primary" href="#about">Get Started</a>
+      </div>
+    </div>
+  </div>
+
+  <section class="section" id="about">
+    <div class="section-content">
+      <div class="container">
+        <h2>About</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam consectetur libero ac odio molestie, vel
+          bibendum nulla pharetra.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="services">
+    <div class="section-content">
+      <div class="container">
+        <h2>Services</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam consectetur libero ac odio molestie, vel
+          bibendum nulla pharetra.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="foot">
+
+    <div class="footmain">
+
+      <!-- <div class="map-cont"> -->
+
+      <iframe class="gmap_iframe" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
+        src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=university of dodoma&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">
+
+      </iframe>
+      <!-- </div> -->
+
+      <div class="form-cont">
+        <form>
+          <!-- Name input -->
+          <div class="form-outline mb-4">
+            <input type="text" id="form4Example1" class="form-control" placeholder="Name" />
+            <!-- <label class="form-label" for="form4Example1">Name</label> -->
+          </div>
+
+          <!-- Email input -->
+          <div class="form-outline mb-4">
+            <input type="email" id="form4Example2" class="form-control" placeholder="Email address" />
+            <!-- <label class="form-label" for="form4Example2">Email address</label> -->
+          </div>
+
+          <!-- Message input -->
+          <div class="form-outline mb-4">
+            <textarea class="form-control" id="form4Example3" rows="4"></textarea>
+            <label class="form-label" for="form4Example3">Message</label>
+          </div>
+
+          <!-- Submit button -->
+          <button type="submit" class="btn btn-primary btn-block mb-4">Send</button>
+        </form>
+      </div>
+
+    </div>
+
+    <footer>
+      <div class="foot-start">
+        <!-- <h2>Quick links</h2> -->
+        <ul class="contacts">
+          <h5>Contacts</h5>
+          <li><a class="text-light" href="tel:+255262310003">Tel: (+255) 262 310 003</a></li>
+          <li>1 Benjamin Mkapa road, 41218 Iyumbu, Dodoma.</li>
+          <li><a href="email:info@udom.ac.tz">info@udom.ac.tz</a></li>
+        </ul>
+        <ul class="quick-link">
+          <h5>Quick Links</h5>
+          <li><a href="https://www.mirembe.or.tz/">Mirembe Hospital</a></li>
+          <li><a href="https://www.mloganzila.or.tz/psychiatry">Muhimbili psychiatry Department</a></li>
+          <li><a href="#">International psychiatry Concern</a></li>
+        </ul>
+      </div>
+
+
+      <div class="final-foot">
+        <p>This website is created and maintained by <a href="https://www.udom.ac.tz/">University of Dodoma</a>
+          computer
+          science students</p>
+        <p>© Copyright 2023, All Rights Reserved</p>
+      </div>
+    </footer>
+
+  </section>
+
+  <div class="scroll-to-top">
+    <i class="fas fa-arrow-up"></i>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script>
+    $(document).ready(function () {
+        let heroOffset = $('.hero-section').offset().top;
+      // Parallax effect on scroll
+    //   $('.hero-section').css('background-position-x', -(5.2) + 'px');
+      $(window).scroll(function () {
+        var scrollTop = $(this).scrollTop();
+        // $('.hero-section').css('transform', 'translateY(' + scrollTop * -2.5 + 'px)');
+        $('.hero-section').css('background-position-y', -(scrollTop * 2.5) + 'px');
+        // $('.hero-section').css('transform', 'translateY(' -(scrollTop * 0.5) + 'px');
+        // $('.overlay').css('backgroundColor','rgba(0, 0, 0, 0.8)');
+      });
+      $(window).scroll(function () {
+        var scrollTop = $(this).scrollTop();
+        $('.hero-section').css('transform', 'translate3d(0, ' + -(scrollTop * 0.5) + 'px, 0)');
+        $('#about').css('transform', 'translate3d(0, ' + -(scrollTop * 0.3) + 'px, 0)');
+        $('#services').css('transform', 'translate3d(0, ' + -(scrollTop * 0.3) + 'px, 0)');
+        $('#foot').css('transform', 'translate3d(0, ' + -(scrollTop * 0.0) + 'px, 0)');
+      });
+
+
+    //   Parallax effect on scroll
+    //   $('.hero-section').css('background-position-x', -(5.2) + 'px');
+    //   $(window).scroll(function () {
+    //     var scrollTop = $(this).scrollTop();
+    //   var scrollFromHero = scrollTop - heroOffset;
+    
+    //     $('.hero-section').css('background-position-y', -(scrollFromHero * 0.9) + 'px');
+    //     // $('.hero-section').css('background-position-y', -(scrollTop * 0.1) + 'px');
+    //     // $('.overlay').css('backgroundColor','rgba(0, 0, 0, 0.8)');
+    //   });
+    //   $(window).scroll(function () {
+    //     var scrollTop = $(this).scrollTop();
+    //     $('.hero-section').css('transform', 'translate3d(0, ' + -(scrollTop * 0.5) + 'px, 0)');
+    //     $('#about').css('transform', 'translate3d(0, ' + -(scrollTop * 0.3) + 'px, 0)');
+    //     $('#services').css('transform', 'translate3d(0, ' + -(scrollTop * 0.3) + 'px, 0)');
+    //     // $('#foot').css('transform', 'translate3d(0, ' + -(scrollTop * 0.3) + 'px, 0)');
+    //   });
+
+
+
+
+//     var heroOffset = $('.hero-section').offset().top;
+
+// // Parallax effect on scroll
+// $(window).scroll(function () {
+//   var scrollTop = $(this).scrollTop();
+
+//   // Calculate the scroll position relative to the starting point of the hero section
+//   var scrollFromHero = scrollTop - heroOffset;
+
+//   // Apply the parallax effect to the hero section
+//   $('.hero-section').css('transform', 'translate3d(0, ' + -(scrollFromHero * 0.5) + 'px, 0)');
+//   $('#about').css('transform', 'translate3d(0, ' + -(scrollFromHero * 0.3) + 'px, 0)');
+//   $('#services').css('transform', 'translate3d(0, ' + -(scrollFromHero * 0.3) + 'px, 0)');
+// });
+
+      // Smooth Scrolling
+      $('a[href^="#"]').on('click', function (event) {
+        var target = $(this.getAttribute('href'));
+        if (target.length) {
+          event.preventDefault();
+          $('html, body').stop().animate({
+            scrollTop: target.offset().top
+          }, 800);
+        }
+      });
+
+      // Scroll-to-Top Button
+      $(window).scroll(function () {
+        if ($(this).scrollTop() > 200) {
+          $('.scroll-to-top').addClass('show');
+        } else {
+          $('.scroll-to-top').removeClass('show');
+        }
+      });
+
+      $('.scroll-to-top').click(function () {
+        $('html, body').animate({
+          scrollTop: 0
+        }, 800);
+        return false;
+      });
+    });
+  </script>
+</body>
+
+</html>
