@@ -74,25 +74,55 @@ div.par1 p{
 }
 
 div.parAbt{
-    background-color: #d6d7db;
+    height: 100vh;
+    background: linear-gradient(to right,#ccd0d5,#dcdde1,#cbccd1);
+    /* width: 95%; */
+    /* margin: 0 auto; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-div.parAbt h5{
-    font-size: 3em;
-    color: rgb(6, 46, 19);
-    font-style: italic;
-    font-weight: 500;
-    margin-left: 30px;
+div.main-content{
+    /* background-color: gold; */
+    height: 25%;
+    width: 85%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
-div.parAbt p{
-    margin-top: auto;
+div.subs{
+    /* background-color: aquamarine; */
+    width: 85%;
+    height: 60%;
+    display: flex;
     justify-content: space-around;
     align-items: center;
-    text-align: center;
-    text-decoration: dashed;
-    padding: 10px;
-    font-weight: 500;
+}
+div.line{
+    height: 30vh;
+    width: 3px;
+    background-color: black;
+}
+
+div.sub{
+width: 40%;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+}
+
+p.sub-para{
+    margin-bottom: 15px;
+}
+
+div.parAbt div.head{
+    height: 10%;
+    /* background-color: green; */
+    display: flex;
+    align-items: center;
 }
 
 div.pics{
