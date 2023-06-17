@@ -2,76 +2,16 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    text-decoration: none;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-body{
-    background-color: white;
-}
-
-div.topBar{
-    height: 80px;
-    width: calc(100%);
-    background-size: cover;
-    background-color: green;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: fixed;
-    box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
-}
-
-
- .TheLogo h1{
-    position: relative;
-    color: white;
-    left: 20px; 
-}
-
-.navigators{
-   justify-content: space-around;    
-}
-
-.navigators nav ul{
-    display: flex;
-    flex-direction: row;
-    position: relative;
-    width: 15cm;
-    justify-content: space-around;
-}
-
-.navigators nav ul li{
-    list-style-type: none;
-    align-content: center;
-}
-
-.navigators nav ul li a{
-    text-decoration: none;
-    color: white; 
-    font-weight: 700;
 }
 
 div.hero-section{
-    margin-top: calc(100%-100px);
-    height: 600px;
-    justify-content: space-around;
     height: 100vh;
-    width: 100%;
-    display: flex;
+    width: 100vw;
     background-image: url('../assets/mentalHealth2.jpg');
     background-size: cover;
     background-position: center;
 }
 
-div.par1 p{
-    font-size: 5em;
-    color: rgb(6, 46, 19);
-    font-weight: 700;
-    margin-top: 80px;
-    text-align: center;
-    margin-left: 30px;
-}
 
 div.parAbt{
     height: 100vh;
@@ -125,245 +65,259 @@ div.parAbt div.head{
     align-items: center;
 }
 
-div.pics{
-    justify-content: space-around;
-    padding: 20px;
-    align-content: center;
-    grid-template-columns: repeat(autofit, minmax(250px, 1fr));
+section.part{
+    background-color: black;
+    color: white;
 
-}
-
-div.pics span img{
-    border-radius: 50%;
-    margin-right: 7px;
-    
-}
-section{
-    border: 0.5px solid rgb(6, 46, 19); 
-    border-radius: 3px;
-}
-div.arc{
     display: flex;
-    flex-direction: row;
-    background-image: url('../assets/award_Man.png');
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+}
+
+
+div.partners{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+div.pic{
+    height: 200px;
+    width: 200px;
+    /* background-color: blue; */
+    margin: 20px;
+    border-radius: 50%;
+
     background-size: cover;
-    height: 700px;
+    background-repeat: no-repeat;
+    /* animation: movePartner 20s linear infinite; */
 }
 
-div.arcTitle p{
-    font-size: 5em;
-    color: rgb(6, 46, 19);
-    font-weight: 700;
-    margin-top: 80px;
+div.pic1{
+    background-image: url('../assets/mentalHealth1.jpg');
+}
+
+div.pic2{
+    background-image: url('../assets/mentalHealth3.jpg');
+}
+
+div.pic3{
+    background-image: url('../assets/meditation.jpg');
+}
+
+div.pic4{
+    background-image: url('../assets/aware2.jpeg');
+}
+
+div.pic5{
+    background-image: url('../assets/aware1.jpeg');
+}
+
+
+/* Achievement */
+
+section.achievement{
+    /* background-color: beige; */
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+}
+
+section.achievement div.head{
+    height: 20vh;
+    /* background-color: rgb(233, 255, 33); */
     text-align: center;
-    margin-left: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-div.arc1{
-    width: 50%;
-    border-right: 1px solid yellowgreen;
-    border-radius: 2px;
-
-}
-
-div.arc1 span{
-    padding: 10px;
+section.achievement div.awards{
+    /* height: 85vh; */
+    width: 100vw;
+    margin: 0 auto;
+    /* background-color: rgb(0, 210, 105); */
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    /* flex: 2; */
 }
 
-div.arc1 span img{
+section.achievement div.award{
+    width: 600px;
+    height: 150px;
+    /* margin: 0 10px 10px; */
+    margin: 20px;
+
+    /* background-color: blue; */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+div.profile-pic{
+    height: 100px;
+    width: 100px;
+    /* background-color: red; */
+    margin-right: 15px;
     border-radius: 50%;
-    margin-right: 20px;
-    cursor: pointer;
+    background-size: cover;
+    background-position: center;
 }
 
-div.arc1 span p{
-    font-weight: 500;
-    color: rgb(6, 46, 19);
+div.pic-one{
+    background-image: url('../assets/award4.webp');
 }
+
+div.pic-two{
+    background-image: url('../assets/award2.jpg');
+}
+
+div.pic-three{
+    background-image: url('../assets/award1.jpg');
+}
+
+div.pic-four{
+    background-image: url('../assets/award7.webp');
+}
+
+div.explain{
+    width: 400px;
+    overflow: hidden;
+}
+
 
 div.arc2{
-    width: 50%;
-    padding: 50px;
-    margin-top: 10%;
-    
-}
-
-div.arc2 p{
-    font-size: 2rem;
-    font-weight: 500;
-    font-style: italic;
-    color: rgb(6, 46, 19);
+    /* background-color: aqua; */
+    width: 70%;
+    margin: 20px auto;
+    text-align: center;
 }
 
 footer{
-    height: 100px;
-    background: green;
-    padding: 40px;
-}
-
-footer p{
-    text-align: center;
-    font-weight: 500;
+    background-color: black;
+    height: 20vh;
     color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-@media only screen and (max-width: 1024px){
-    div.topBar{
-        margin-top: 0;
-        height: 80px;
-        width: 100;
-        background-size: cover;
-        background-color: green;
-        text-align: center;
-        align-items: center;
-        position: fixed;
-        box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
-    }
-    
-  
-    div.TheLogo h1{
-        position: relative;
-        left: 70%;  
-        width: 100%;
-        text-align: center; 
+
+@media screen and (max-width: 700px){
+    body{
+        /* background-color: red; */
     }
 
-    .navigators{
-        display: none;  
-     }
-    
-     div.par1{
-        background-image: url('../assets/mentalHealth2.jpg');
-        background-size: 1024px;
-    }
-    
-    div.par1 p{
-        font-size: 4em;
-        color: rgb(6, 46, 19);
-        font-weight: 700;
-        margin-top: 80px;
-        text-align: center;
-        margin-left: 30px;
-    }
-    div.pics span img{
-        border-radius: 50%;
-        margin-right: 10px;
-        width: 10rem;
-        height: 10rem;
-        
-    }
-    div.arc{
-        display: flex;
-        flex-direction: column;
-        background-image: url('../assets/award_Man.png');
-        background-size: cover;
-        height: auto; 
-    }
-    div.arcTitle p{
-        font-size: 3em;
-        color: rgb(6, 46, 19);
-        font-weight: 700;
-        margin-top: 80px;
-        text-align: center;
-        margin-left: 30px;
-        width: auto;
-    }
-    
-    div.arc1{
-        width: 100%;
-    }
-    div.arc2{
-        width: 100%;
-        padding: 50px;
-    }
-    footer{
-        
-        background: green;
-        padding: 40px;
-        bottom: 0;
-    }
-    section{
-        border: 0.5px solid rgb(6, 46, 19); 
-        border-radius: 3px;
-        width: auto;
-    }
-}
-@media only screen and (max-width: 720px){
-       
-    div.TheLogo h1{
-        position: relative;
-        left: 50%;  
-        width: 100%;
-        text-align: center; 
-    }
-    div.par1 p{
-        font-size: 3em;
-        text-align: center;
-    }
-    div.parAbt h5{
-        font-size: 2em;
-    }
     div.hero-section{
-        background-image: url('../assets/mentalHealth2.jpg');
-        background-size: cover;
-        background-position: center;
-        height: 300px;
-    }
-    div.arcTitle p{
-        font-size: 2.5em;
-        width: auto;
-    }
-}
-@media only screen and (max-width: 280px){
-    
-    div.TheLogo h1{
-        position: relative;
-        left: 30%;  
-        width: 100%;
-        text-align: center; 
-    }
-    div.par1 p{
-        font-size: 3em;
-        text-align: center;
-    }
-    div.parAbt h5{
-        font-size: 2em;
-    }
-    div.par1{
-        background-image: url('../assets/mentalHealth2.jpg');
-        background-size: 330px 410px;
         height: 300px;
     }
 
-    div.arcTitle p{
-        font-size: 2em;
-        width: auto;
+    div.parAbt{
+        height: auto;
     }
-}
-@media only screen and (max-width: 430px){
-    div.par1{
-        background-image: url('../assets/mentalHealth2.jpg');
-        background-size: 330px 410px;
-        height: 300px;
-    }
-    div.arcTitle p{
-        font-size: 2.5em;
-        width: auto;
-    }
-    div.TheLogo h1{
-        position: relative;
-        left: 60%;  
-        width: 100%;
-        text-align: center; 
-    }
-    div.par1 p{
-        font-size: 3em;
+
+    div.parAbt div.head{
+        margin-bottom: 20px;
         text-align: center;
     }
-    div.parAbt h5{
-        font-size: 2em;
+
+    div.main-content p.p1{
+        margin-bottom: 15px;
+    }
+
+    div.main-content p.p2{
+        text-align: left;
+        margin-bottom: 20px;
+    }
+
+    div.subs{
+        flex-direction: column;
+    }
+
+    div.sub{
+        width: 100%;
+        margin: 25px 0;
+    }
+
+    div.line{
+        height: 3px;
+        width: 80vw;
+    }
+
+    section.part{
+        height: auto;
+    }
+
+    div.partners{
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+
+
+    /* Achievement */
+    section.achievement{
+        flex-direction: column;
+        height: auto;
+    }
+
+    section.achievement div.awards{
+        flex-direction: column;
+    }
+
+    div.subs{
+        flex-direction: column;
+    }
+
+
+    section.achievement div.award{
+        width: 350px;
+        margin: 0;
+        height: auto;
+        padding: 20px;
+        /* background-color: blue; */
+        margin: 0 0 20px;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.668);
+    }
+    
+
+    div.explain{
+        width: 350px;
+        overflow: hidden;
+        padding: 15px;
+    }
+
+    div.award{
+        flex-direction: column;
+    }
+
+    footer{
+        height: 100px;
+        text-align: center;
+    }
+
+    section.achievement div.head{
+        /* background-color: black; */
+        height: 20vh;
+        /* color: white; */
+        margin: 50px auto 30px;
+    }
+
+    div.head{
+        /* background-color: black; */
+        height: 10vh;
+        /* color: white; */
+        margin: 40px auto 0;
+    }
+
+    div.arc2{
+        width: 90%;
+        text-align: center;
     }
 }
