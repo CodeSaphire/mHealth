@@ -1,4 +1,4 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -7,7 +7,7 @@
 
 /* lets start with mobile design first */
 
-section.cards{
+section.cards {
     /* background-color: red; */
     display: flex;
     justify-content: center;
@@ -17,7 +17,7 @@ section.cards{
 
 }
 
-div.card{
+div.card {
     /* background-color: green; */
     /* width: 350px; */
     width: 93%;
@@ -27,59 +27,66 @@ div.card{
     /* padding: 10px; */
 
     margin: 5px auto 15px;
-    box-shadow: 0px 0px  5px rgb(0, 0, 0,0.6);
+    box-shadow: 0px 0px 5px rgb(0, 0, 0, 0.6);
     border-radius: .3em;
     cursor: pointer;
 
     display: flex;
     flex-direction: column;
+    /* transition: 5s ease-in; */
+    /* overflow: scroll; */
 }
 
-div.img{
+div.img {
     background-color: red;
     width: 100%;
     height: 250px;
 }
 
-div.content{
+div.content {
     padding-top: .4em;
     padding: 15px;
     transition: .25s ease;
 }
 
-div.content:hover{
-    background-color: rgb(0, 0, 0,1);
+div.content:hover {
+    background-color: rgb(0, 0, 0, 1);
     color: #fff;
     cursor: copy;
-    
+
 }
 
-div.link{
+div.link {
     margin-top: 1em;
     text-align: center;
 }
 
-div.link a{
+div.link a {
     text-decoration: none;
     color: white;
 }
 
-div.link a:hover{
+div.link a:hover {
     text-decoration: none;
     color: white;
 }
 
-section.cards-add{
-    background-color: blue;
+section.cards-add-none {
+    /* background-color: blue; */
+    /* display: flex; */
     display: none;
 }
 
-section.cards-add{
-    background-color: blue;
-    display: none;
+/* section.cards-add::after{
+    transition: 1s ease-in;
+} */
+
+section.cards-add {
+    /* transition: 1s ease-in; */
+    display: flex;
 }
 
-div.prologue{
+div.prologue {
     /* background-color: blue; */
     width: 95%;
     /* padding: 20px; */
@@ -91,33 +98,30 @@ div.prologue{
     align-items: center;
 }
 
-div.prologue p{
+div.prologue p {
     padding: 20px;
 }
 
-div.prologue button{
+div.prologue button {
     width: 150px;
     height: 30px;
 }
 
-@media screen and (min-width: 720px){
-    body{
-        /* background-color: greenyellow; */
-    }
+@media screen and (min-width: 720px) {
 
-    section.cards{
+    section.cards {
         flex-direction: row;
         flex-wrap: wrap;
         width: 90%;
         margin: 0 auto;
     }
 
-    div.card{
+    div.card {
         width: 350px;
         height: 70vh;
     }
 
-    div.prologue{
+    div.prologue {
         width: 80%;
     }
 
