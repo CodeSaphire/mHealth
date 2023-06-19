@@ -1,0 +1,157 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+}
+
+.hero-section {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    background-color: black;
+    background-image: url("../../assets/closeFace.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.hero-section:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Adjust the opacity as needed */
+}
+
+.hero-section-content {
+    position: relative;
+    z-index: 1;
+}
+
+.hero-section h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: white;
+}
+
+.hero-section p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    color: white;
+}
+
+.hero-section .btn {
+    font-size: 1.2rem;
+}
+
+.section {
+    position: relative;
+    height: 100vh;
+}
+
+.section-content {
+    position: relative;
+    z-index: 1;
+}
+
+.navbar {
+    /* background-color: #6f0f0f; */
+    /* border-bottom: 1px solid #ddd; */
+    /* padding: 10px 20px; */
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    transition: opacity 0.3s ease;
+}
+
+.navbar.hidden {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.navbar .navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.navbar-toggler {
+    display: block;
+    cursor: pointer;
+    /* padding: 10px; */
+    background-color: transparent;
+    border: none;
+    z-index: 1;
+}
+
+.navbar-toggler span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: #333333;
+    margin-bottom: 5px;
+    transition: transform 0.3s ease;
+}
+
+.navbar-toggler.open span:nth-child(1) {
+    transform: translateY(6px) rotate(45deg);
+}
+
+.navbar-toggler.open span:nth-child(2) {
+    opacity: 0;
+}
+
+.navbar-toggler.open span:nth-child(3) {
+    transform: translateY(-6px) rotate(-45deg);
+}
+
+.navbar .navbar-nav {
+    margin-left: auto;
+}
+
+.navbar .navbar-nav .nav-link {
+    color: #d9d9d9;
+    font-size: 1rem;
+    margin-left: 20px;
+}
+
+.navbar .navbar-nav .nav-link:hover {
+    color: #555;
+}
+
+.scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #555;
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.scroll-to-top.show {
+    opacity: 1;
+    visibility: visible;
+}
