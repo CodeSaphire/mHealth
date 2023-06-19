@@ -17,7 +17,7 @@ section.cards {
 
 }
 
-div.card {
+section.cards div.card {
     /* background-color: green; */
     /* width: 350px; */
     width: 93%;
@@ -37,7 +37,7 @@ div.card {
     /* overflow: scroll; */
 }
 
-div.img {
+section.cards div.card div.img {
     background-color: red;
     background-position: center;
     background-size: cover;
@@ -46,57 +46,57 @@ div.img {
     height: 250px;
 }
 
-div.img1{
+section.cards div.card div.img1{
     background-image: url('../assets/Sleeping-cat.jpg');
 }
 
-div.img2{
+section.cards div.card div.img2{
     background-image: url('../assets/Social-media.jpg');
 }
 
-div.img3{
+section.cards div.card div.img3{
     background-image: url('../assets/Relationships-1.jpg');
 }
 
-div.img4{
+section.cards div.card div.img4{
     background-image: url('../assets/Exercise-1.jpg');
 }
 
-div.img5{
+section.cards div.card div.img5{
     background-image: url('../assets/Nutrients.jpg');
 }
 
-div.img6{
+section.cards div.card div.img6{
     background-image: url('../assets/Easy-1.jpg');
 }
 
 
 
 
-div.content {
+section.cards div.card div.content {
     padding-top: .4em;
     padding: 15px;
     transition: .25s ease;
 }
 
-div.content:hover {
+section.cards div.card div.content:hover {
     background-color: rgb(0, 0, 0, 1);
     color: #fff;
     cursor: copy;
 
 }
 
-div.link {
+section.cards div.card div.content div.link {
     margin-top: 1em;
     text-align: center;
 }
 
-div.link a {
+section.cards div.card div.content div.link a {
     text-decoration: none;
     color: white;
 }
 
-div.link a:hover {
+section.cards div.card div.content div.link a:hover {
     text-decoration: none;
     color: white;
 }
@@ -146,7 +146,7 @@ div.prologue button {
         margin: 0 auto;
     }
 
-    div.card {
+    section.cards div.card {
         width: 350px;
         height: 70vh;
     }
