@@ -1,0 +1,72 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box  ;
+}
+
+/* Mobile design first */
+
+section.hero-section{
+    height: 100vh;
+}
+
+div.hero-image{
+    background-color: red;
+    height: 100%;
+    background-image: url('');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+div.overlay{
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+
+    display: flex;
+    flex-direction: column;
+}
+
+nav.navbar{
+    background-color: aqua;
+    display: flex;
+    justify-content: space-between;
+}
+
+div.navbar-links{
+    display: none;
+}
+
+.navbar-toggle {
+    /* margin-right: 50px; */
+    display: block;
+    cursor: pointer;
+    padding: 10px;
+    background-color: transparent;
+    border: none;
+    z-index: 1;
+  }
+
+  .navbar-toggle span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: #333333;
+    margin-bottom: 5px;
+    transition: transform 0.3s ease;
+  }
+
+  .navbar-toggle.close span:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .navbar-toggle.close span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .navbar-toggle.close span:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+
+

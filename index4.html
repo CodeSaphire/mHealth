@@ -78,22 +78,33 @@
         }
 
         .navbar-toggler {
-            color: #333;
-            background-color: transparent;
-            border: none;
-            padding: 0;
-            font-size: 1rem;
-            line-height: 1;
-            cursor: pointer;
-            outline: none;
+            display: block;
+    cursor: pointer;
+    /* padding: 10px; */
+    background-color: transparent;
+    border: none;
+    z-index: 1;
         }
 
         .navbar-toggler span {
             display: block;
-            width: 22px;
-            height: 2px;
-            margin-bottom: 4px;
-            background-color: #333;
+    width: 25px;
+    height: 3px;
+    background-color: #333333;
+    margin-bottom: 5px;
+    transition: transform 0.3s ease;
+        }
+
+        .navbar-toggler.open span:nth-child(1) {
+            transform: translateY(6px) rotate(45deg);
+        }
+
+        .navbar-toggler.open span:nth-child(2) {
+            opacity: 0;
+        }
+
+        .navbar-toggler.open span:nth-child(3) {
+            transform: translateY(-6px) rotate(-45deg);
         }
 
         .navbar .navbar-nav {
@@ -138,12 +149,11 @@
 <body>
     <nav class="navbar navbar-expand-lg">
         <a class="navbar-brand" href="#">Your Logo</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <div class="navbar-toggler">
             <span></span>
             <span></span>
             <span></span>
-        </button>
+        </div>
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
@@ -193,10 +203,10 @@
     </section>
 
     <section>
-        <div class="scroll-to-top">
-            <i class="fas fa-arrow-up"></i>
-        </div>
-    </section>
+
+    <div class="scroll-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </div>
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
@@ -205,38 +215,39 @@
             // Parallax effect on scroll
             $(window).scroll(function () {
                 var scrollTop = $(this).scrollTop();
-                $('.hero-section').css('background-position-y', -(scrollTop * 0.5) + 'px');
-            });
-            $(window).scroll(function () {
-                var scrollTop = $(this).scrollTop();
-                $('.hero-section').css('transform', 'translate3d(0, ' + -(scrollTop * 0.5) + 'px, 0)');
+                $('.hero-section').css('background-position-y', -(scrollTop / 2) + 'px');
             });
 
-            // Smooth Scrolling
-            $('a[href^="#"]').on('click', function (event) {
-                var target = $(this.getAttribute('href'));
-                if (target.length) {
-                    event.preventDefault();
-                    $('html, body').stop().animate({
-                        scrollTop: target.offset().top
-                    }, 800);
-                }
+            // Smooth scrolling to target sections
+            $('.nav-link').click(function (e) {
+                e.preventDefault();
+                var target = $(this).attr('href');
+                $('html, body').animate({
+                    scrollTop: $(target).offset().top
+                }, 800);
             });
 
-            // Scroll-to-Top Button
+            // Show/hide scroll-to-top button
             $(window).scroll(function () {
-                if ($(this).scrollTop() > 200) {
+                if ($(this).scrollTop() > 100) {
                     $('.scroll-to-top').addClass('show');
                 } else {
                     $('.scroll-to-top').removeClass('show');
                 }
             });
 
+            // Scroll to top on button click
             $('.scroll-to-top').click(function () {
                 $('html, body').animate({
                     scrollTop: 0
                 }, 800);
                 return false;
+            });
+
+            // Hamburger menu toggle
+            $('.navbar-toggler').click(function () {
+                $(this).toggleClass('open');
+                $('.navbar-collapse').slideToggle();
             });
         });
     </script>
