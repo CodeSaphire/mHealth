@@ -12,7 +12,7 @@ section.mhealth_conditions div.head{
     margin: 20px 0;
 }
 
-div.cards {
+section.mhealth_conditions div.cards {
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -21,7 +21,7 @@ div.cards {
 
 }
 
-div.card {
+section.mhealth_conditions div.cards div.card {
     width: 93%;
     min-width: 300px;
 
@@ -34,7 +34,7 @@ div.card {
     flex-direction: column;
 }
 
-div.img {
+section.mhealth_conditions div.cards div.card div.img {
     background-color: red;
     background-position: center;
     background-size: cover;
@@ -43,51 +43,48 @@ div.img {
     height: 250px;
 }
 
-div.img1{
+section.mhealth_conditions div.cards div.card div.img1{
     background-image: url('');
 }
 
-div.img2{
+section.mhealth_conditions div.cards div.card div.img2{
     background-image: url('');
 }
 
-div.img3{
+section.mhealth_conditions div.cards div.card div.img3{
     background-image: url('');
 }
 
-div.content {
+section.mhealth_conditions div.cards div.card div.content {
     padding-top: .4em;
     padding: 15px;
     transition: .25s ease;
 }
 
-div.content:hover {
+section.mhealth_conditions div.cards div.card div.content:hover {
     background-color: rgb(0, 0, 0, 1);
     color: #fff;
     cursor: copy;
 
 }
 
-div.link {
+section.mhealth_conditions div.cards div.card div.content div.link {
     margin-top: 1em;
     text-align: center;
 }
 
-div.link a {
+section.mhealth_conditions div.cards div.card div.content div.link a {
     text-decoration: none;
     color: white;
 }
 
-div.link a:hover {
+section.mhealth_conditions div.cards div.card div.content div.link a:hover {
     text-decoration: none;
     color: white;
 }
 
-section.cards-add-none {
-    display: none;
-}
 
-div.prologue {
+section.mhealth_conditions div.prologue {
     width: 95%;
     margin: 30px auto 20px;
 
@@ -97,7 +94,7 @@ div.prologue {
     align-items: center;
 }
 
-div.prologue p {
+section.mhealth_conditions div.prologue p {
     padding: 20px;
     text-align: center;
 }
@@ -105,19 +102,19 @@ div.prologue p {
 
 @media screen and (min-width: 720px) {
 
-    div.cards {
+    section.mhealth_conditions div.cards {
         flex-direction: row;
         flex-wrap: wrap;
         width: 90%;
         margin: 0 auto;
     }
 
-    div.card {
+    section.mhealth_conditions div.cards div.card {
         width: 350px;
         height: 70vh;
     }
 
-    div.prologue {
+    section.mhealth_conditions div.prologue {
         width: 80%;
     }
 
