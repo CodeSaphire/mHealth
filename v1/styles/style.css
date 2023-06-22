@@ -253,3 +253,123 @@ section.what_is_mhealth div.subs div.sub-right ul{
 
 }
 /* WHAT IS MENTAL HEALTH END  */
+
+
+
+/* MENTAL HEALTH CONDITIONS START */
+/* lets start with mobile design first */
+
+section.mhealth_conditions div.head{
+    text-align: center;
+    margin: 20px 0;
+}
+
+section.mhealth_conditions div.cards {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+
+}
+
+section.mhealth_conditions div.cards div.card {
+    width: 93%;
+    min-width: 300px;
+
+    margin: 5px auto 15px;
+    box-shadow: 0px 0px 5px rgb(0, 0, 0, 0.6);
+    border-radius: .3em;
+    cursor: pointer;
+
+    display: flex;
+    flex-direction: column;
+}
+
+section.mhealth_conditions div.cards div.card div.img {
+    background-color: red;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 250px;
+}
+
+section.mhealth_conditions div.cards div.card div.img1{
+    background-image: url('');
+}
+
+section.mhealth_conditions div.cards div.card div.img2{
+    background-image: url('');
+}
+
+section.mhealth_conditions div.cards div.card div.img3{
+    background-image: url('');
+}
+
+section.mhealth_conditions div.cards div.card div.content {
+    padding-top: .4em;
+    padding: 15px;
+    transition: .25s ease;
+}
+
+section.mhealth_conditions div.cards div.card div.content:hover {
+    background-color: rgb(0, 0, 0, 1);
+    color: #fff;
+    cursor: copy;
+
+}
+
+section.mhealth_conditions div.cards div.card div.content div.link {
+    margin-top: 1em;
+    text-align: center;
+}
+
+section.mhealth_conditions div.cards div.card div.content div.link a {
+    text-decoration: none;
+    color: white;
+}
+
+section.mhealth_conditions div.cards div.card div.content div.link a:hover {
+    text-decoration: none;
+    color: white;
+}
+
+
+section.mhealth_conditions div.prologue {
+    width: 95%;
+    margin: 30px auto 20px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+section.mhealth_conditions div.prologue p {
+    padding: 20px;
+    text-align: center;
+}
+
+
+@media screen and (min-width: 720px) {
+
+    section.mhealth_conditions div.cards {
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    section.mhealth_conditions div.cards div.card {
+        width: 350px;
+        height: 70vh;
+    }
+
+    section.mhealth_conditions div.prologue {
+        width: 80%;
+    }
+
+}
+
+/* MENTAL HEALTH CONDITION END */
