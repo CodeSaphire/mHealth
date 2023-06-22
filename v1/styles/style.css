@@ -155,3 +155,101 @@ body {
     opacity: 1;
     visibility: visible;
 }
+
+
+
+
+/* WHAT IS MENTAL HEALTH SECTION *START* */
+
+section.what_is_mhealth{
+    background: linear-gradient(to bottom, white,white,rgb(131, 255, 100));
+}
+
+
+section.what_is_mhealth div.head{
+    text-align: center;
+}
+
+section.what_is_mhealth h4.title{
+    margin-bottom: 5px;
+}
+
+p,ul{
+    margin: 0 0 15px;
+    /* padding: 15px; */
+}
+
+section.what_is_mhealth div.main-content{
+    padding: 15px;
+}
+
+section.what_is_mhealth div.subs{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+section.what_is_mhealth div.subs div.sub-left,div.sub-right{
+    width: 98%;
+    margin-bottom: 10px;
+    padding: 15px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.573);
+}
+
+
+section.what_is_mhealth div.subs div.line{
+    width: 80%;
+    height: 2px;
+    background-color: black;
+    margin-bottom: 10px;
+}
+
+/* section.what_is_mhealth div.subs div.sub-right{
+    padding: 15px
+    width
+} */
+
+section.what_is_mhealth div.subs div.sub-right ul{
+    padding: 15px
+}
+
+@media screen and (min-width: 720px) {
+    section.what_is_mhealth div.main-content{
+        width: 85%;
+        /* background-color: greenyellow; */
+        margin: 0 auto;
+
+        text-align: center;
+    }
+
+    p.tit{
+        margin-bottom: 0;
+    }
+
+    section.what_is_mhealth div.subs{
+        width: 85%;
+        /* background-color: gold; */
+        margin: 0 auto;
+    }
+
+    section.what_is_mhealth div.subs{
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    section.what_is_mhealth div.subs div.line{
+        width: 3px;
+        height: 400px;
+        background-color: rgb(70, 70, 70);
+        border-radius: .2em;
+        /* margin-bottom: 10px; */
+    }
+
+    section.what_is_mhealth div.subs div.sub-left,div.sub-right{
+        width: 45%;
+        box-shadow: none;
+    }
+
+}
+/* WHAT IS MENTAL HEALTH END  */

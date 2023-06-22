@@ -27,6 +27,12 @@ $(document).ready(function () {
     $(window).scroll(function () {
         var scrollTop = $(this).scrollTop();
         $('.hero-section').css('transform', 'translate3d(0, ' + -(scrollTop * 0.5) + 'px, 0)');
+        // $('#what_is_mhealth').css('transform', 'translate3d(0, ' + -(scrollTop * 0.5) + 'px, 0)');
+    });
+    $(window).scroll(function () {
+        var scrollTop = $(this).scrollTop();
+        // $('.hero-section').css('transform', 'translate3d(0, ' + -(scrollTop * 0.5) + 'px, 0)');
+        // $('#what_is_mhealth').css('transform', 'translate3d(0, ' + -(scrollTop * 0.5) + 'px, 0)');
     });
 
     // Smooth scrolling to target sections
