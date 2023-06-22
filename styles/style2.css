@@ -44,7 +44,7 @@ img{
 }
 
     
-.quick-links{
+footer ul.quick-links{
     /* display: flex; */
     flex-direction: column;
     flex-wrap: wrap;
@@ -75,7 +75,7 @@ h6{
     color: white;
 }
 
-ul li{
+footer ul li{
     list-style-type: none;
 }
 
