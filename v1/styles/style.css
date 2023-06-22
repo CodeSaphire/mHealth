@@ -424,30 +424,28 @@ section.cards div.card div.img {
 }
 
 section.cards div.card div.img1{
-    background-image: url('');
+    background-image: url('../assets/Sleeping-cat.jpg');
 }
 
 section.cards div.card div.img2{
-    background-image: url('');
+    background-image: url('../assets/Social-media.jpg');
 }
 
 section.cards div.card div.img3{
-    background-image: url('');
+    background-image: url('../assets/Relationships-1.jpg');
 }
 
 section.cards div.card div.img4{
-    background-image: url('');
+    background-image: url('../assets/Exercise-1.jpg');
 }
 
 section.cards div.card div.img5{
-    background-image: url('');
+    background-image: url('../assets/Nutrients.jpg');
 }
 
 section.cards div.card div.img6{
-    background-image: url('');
+    background-image: url('../assets/Easy-1.jpg');
 }
-
-
 
 
 section.cards div.card div.content {
