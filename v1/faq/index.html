@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FAQ Page</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    /* Custom Styles */
+    body {
+      background-color: #f7f7f7;
+      font-family: Arial, sans-serif;
+    }
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 40px 20px;
+    }
+    h1 {
+      font-size: 28px;
+      font-weight: bold;
+      margin-bottom: 30px;
+      text-align: center;
+    }
+    .card-header {
+      background-color: #fff;
+      padding: 0;
+    }
+    .card-header button {
+      color: #333;
+      font-weight: bold;
+      width: 100%;
+      text-align: left;
+      padding: 15px;
+      border: none;
+      background-color: transparent;
+    }
+    .card-header button:hover {
+      background-color: #f7f7f7;
+    }
+    .card-header button.collapsed::after {
+      content: '\002B';
+      float: right;
+    }
+    .card-header button:not(.collapsed)::after {
+      content: '\2212';
+      float: right;
+    }
+    .card-body {
+      background-color: #fff;
+      color: #333;
+      padding: 15px;
+      border-top: 1px solid #f7f7f7;
+    }
+    .card-body p {
+      margin-bottom: 10px;
+    }
+    .scroll-to-top {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      display: none;
+      cursor: pointer;
+      z-index: 9999;
+      background-color: #333;
+      color: #fff;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      text-align: center;
+      line-height: 40px;
+    }
+    .scroll-to-top:hover {
+      background-color: #555;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Frequently Asked Questions</h1>
+
+    <div class="accordion" id="faqAccordion">
+
+      <!-- Question 1 -->
+      <div class="card">
+        <div class="card-header" id="question1">
+          <h2 class="mb-0">
+            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#answer1" aria-expanded="true" aria-controls="answer1">
+              Question 1: What is mental health?
+            </button>
+          </h2>
+        </div>
+
+        <div id="answer1" class="collapse show" aria-labelledby="question1" data-parent="#faqAccordion">
+          <div class="card-body">
+            <p>Mental health refers to a person's emotional, psychological, and social well-being. It affects how people think, feel, and act, and helps determine how individuals handle stress, relate to others, and make choices.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Question 2 -->
+      <div class="card">
+        <div class="card-header" id="question2">
+          <h2 class="mb-0">
+            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#answer2" aria-expanded="false" aria-controls="answer2">
+              Question 2: How can I improve my mental health?
+            </button>
+          </h2>
+        </div>
+
+        <div id="answer2" class="collapse" aria-labelledby="question2" data-parent="#faqAccordion">
+          <div class="card-body">
+            <p>There are several ways to improve your mental health:</p>
+            <ul>
+              <li>Engage in regular physical exercise.</li>
+              <li>Practice relaxation techniques such as deep breathing or meditation.</li>
+              <li>Maintain a balanced and nutritious diet.</li>
+              <li>Ensure you get enough quality sleep.</li>
+              <li>Seek support from loved ones and maintain social connections.</li>
+              <li>Consider professional help if needed.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Question 3 -->
+      <div class="card">
+        <div class="card-header" id="question3">
+          <h2 class="mb-0">
+            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#answer3" aria-expanded="false" aria-controls="answer3">
+              Question 3: How can I support someone with a mental health condition?
+            </button>
+          </h2>
+        </div>
+
+        <div id="answer3" class="collapse" aria-labelledby="question3" data-parent="#faqAccordion">
+          <div class="card-body">
+            <p>Supporting someone with a mental health condition involves:</p>
+            <ul>
+              <li>Being understanding, empathetic, and non-judgmental.</li>
+              <li>Listening actively and offering your presence and support.</li>
+              <li>Encouraging them to seek professional help if needed.</li>
+              <li>Educating yourself about their specific condition to better understand their needs.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Question 4 -->
+      <div class="card">
+        <div class="card-header" id="question4">
+          <h2 class="mb-0">
+            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#answer4" aria-expanded="false" aria-controls="answer4">
+              Question 4: What are some common mental health disorders?
+            </button>
+          </h2>
+        </div>
+
+        <div id="answer4" class="collapse" aria-labelledby="question4" data-parent="#faqAccordion">
+          <div class="card-body">
+            <p>Some common mental health disorders include:</p>
+            <ul>
+              <li>Anxiety disorders (e.g., generalized anxiety disorder, panic disorder).</li>
+              <li>Depression and depressive disorders.</li>
+              <li>Bipolar disorder.</li>
+              <li>Obsessive-compulsive disorder (OCD).</li>
+              <li>Post-traumatic stress disorder (PTSD).</li>
+              <li>Schizophrenia.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Question 5 -->
+      <div class="card">
+        <div class="card-header" id="question5">
+          <h2 class="mb-0">
+            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#answer5" aria-expanded="false" aria-controls="answer5">
+              Question 5: How do I know if I need professional help for my mental health?
+            </button>
+          </h2>
+        </div>
+
+        <div id="answer5" class="collapse" aria-labelledby="question5" data-parent="#faqAccordion">
+          <div class="card-body">
+            <p>If you are experiencing persistent symptoms that significantly impact your daily life, it may be beneficial to seek professional help. Some signs that indicate the need for professional assistance include:</p>
+            <ul>
+              <li>Persistent feelings of sadness, hopelessness, or emptiness.</li>
+              <li>Intense anxiety or panic attacks.</li>
+              <li>Difficulty functioning at work, school, or in relationships</li>
+              <li>Thoughts of self-harm or suicide.</li>
+              <li>Substance abuse or excessive use of alcohol.</li>
+              <li>Significant changes in appetite, sleep patterns, or energy levels.</li>
+            </ul>
+            <p>Remember, reaching out for help is a sign of strength, and mental health professionals are trained to provide support and guidance.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Add more questions and answers here -->
+
+    </div>
+
+    <div class="text-center mt-4">
+      <button id="expandAll" class="btn btn-primary mr-2">Expand All</button>
+      <button id="collapseAll" class="btn btn-primary">Collapse All</button>
+    </div>
+  </div>
+
+  <div class="scroll-to-top">
+    <i class="fas fa-arrow-up"></i>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      // Smooth Scrolling
+      $('a[href^="#"]').on('click', function(event) {
+        var target = $(this.getAttribute('href'));
+        if (target.length) {
+          event.preventDefault();
+          $('html, body').stop().animate({
+            scrollTop: target.offset().top
+          }, 800);
+        }
+      });
+
+      // Show/Hide Toggle
+      $('.card-header button').click(function() {
+        $(this).toggleClass('collapsed');
+      });
+
+      // Expand All
+      $('#expandAll').click(function() {
+        $('.collapse').collapse('show');
+      });
+
+      // Collapse All
+      $('#collapseAll').click(function() {
+        $('.collapse').collapse('hide');
+      });
+
+      // Scroll-to-Top Button
+      $(window).scroll(function() {
+        if ($(this).scrollTop() > 200) {
+          $('.scroll-to-top').fadeIn();
+        } else {
+          $('.scroll-to-top').fadeOut();
+        }
+      });
+
+      $('.scroll-to-top').click(function() {
+        $('html, body').animate({
+          scrollTop: 0
+        }, 800);
+        return false;
+      });
+    });
+  </script>
+</body>
+</html>

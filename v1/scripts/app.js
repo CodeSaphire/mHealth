@@ -37,7 +37,7 @@ $(document).ready(function () {
 
     // Smooth scrolling to target sections
     $('.nav-link').click(function (e) {
-        e.preventDefault();
+        // e.preventDefault();
         var target = $(this).attr('href');
         $('html, body').animate({
             scrollTop: $(target).offset().top
