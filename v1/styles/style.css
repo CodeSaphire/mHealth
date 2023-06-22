@@ -373,3 +373,166 @@ section.mhealth_conditions div.prologue p {
 }
 
 /* MENTAL HEALTH CONDITION END */
+
+
+
+
+
+
+/* PHILES'S PART START HERE */
+
+
+/* lets start with mobile design first */
+
+section.cards {
+    /* background-color: red; */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+
+}
+
+section.cards div.card {
+    /* background-color: green; */
+    /* width: 350px; */
+    width: 93%;
+    min-width: 300px;
+    /* height: 300px; */
+
+    /* padding: 10px; */
+
+    margin: 5px auto 15px;
+    box-shadow: 0px 0px 5px rgb(0, 0, 0, 0.6);
+    border-radius: .3em;
+    cursor: pointer;
+
+    display: flex;
+    flex-direction: column;
+    /* transition: 5s ease-in; */
+    /* overflow: scroll; */
+}
+
+section.cards div.card div.img {
+    background-color: red;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 250px;
+}
+
+section.cards div.card div.img1{
+    background-image: url('');
+}
+
+section.cards div.card div.img2{
+    background-image: url('');
+}
+
+section.cards div.card div.img3{
+    background-image: url('');
+}
+
+section.cards div.card div.img4{
+    background-image: url('');
+}
+
+section.cards div.card div.img5{
+    background-image: url('');
+}
+
+section.cards div.card div.img6{
+    background-image: url('');
+}
+
+
+
+
+section.cards div.card div.content {
+    padding-top: .4em;
+    padding: 15px;
+    transition: .25s ease;
+}
+
+section.cards div.card div.content:hover {
+    background-color: rgb(0, 0, 0, 1);
+    color: #fff;
+    cursor: copy;
+
+}
+
+section.cards div.card div.content div.link {
+    margin-top: 1em;
+    text-align: center;
+}
+
+section.cards div.card div.content div.link a {
+    text-decoration: none;
+    color: white;
+}
+
+section.cards div.card div.content div.link a:hover {
+    text-decoration: none;
+    color: white;
+}
+
+section.cards-add-none {
+    /* background-color: blue; */
+    /* display: flex; */
+    display: none;
+}
+
+/* section.cards-add::after{
+    transition: 1s ease-in;
+} */
+
+section.cards-add {
+    /* transition: 1s ease-in; */
+    display: flex;
+}
+
+div.prologue {
+    /* background-color: blue; */
+    width: 95%;
+    /* padding: 20px; */
+    margin: 30px auto 20px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+div.prologue p {
+    padding: 20px;
+}
+
+div.prologue button {
+    width: 150px;
+    height: 30px;
+}
+
+@media screen and (min-width: 720px) {
+
+    section.cards {
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    section.cards div.card {
+        width: 350px;
+        height: 70vh;
+    }
+
+    div.prologue {
+        width: 80%;
+    }
+
+}
+
+
+/* PHILES'S PART END HERE */
