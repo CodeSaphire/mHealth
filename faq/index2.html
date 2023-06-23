@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FAQ Page</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    /* Custom Styles */
+    body {
+      font-family: Arial, sans-serif;
+      transition: background-color 0.3s ease;
+    }
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 40px 20px;
+    }
+    h1 {
+      font-size: 28px;
+      font-weight: bold;
+      margin-bottom: 30px;
+      text-align: center;
+    }
+    .card-header {
+      background-color: #fff;
+      padding: 0;
+    }
+    .card-header button {
+      color: #333;
+      font-weight: bold;
+      width: 100%;
+      text-align: left;
+      padding: 15px;
+      border: none;
+      background-color: transparent;
+    }
+    .card-header button:hover {
+      background-color: #f7f7f7;
+    }
+    .card-header button.collapsed::after {
+      content: '\002B';
+      float: right;
+    }
+    .card-header button:not(.collapsed)::after {
+      content: '\2212';
+      float: right;
+    }
+    .card-body {
+      background-color: #fff;
+      color: #333;
+      padding: 15px;
+      border-top: 1px solid #f7f7f7;
+    }
+    .card-body p {
+      margin-bottom: 10px;
+    }
+    .scroll-to-top {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      display: none;
+      cursor: pointer;
+      z-index: 9999;
+      background-color: #333;
+      color: #fff;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      text-align: center;
+      line-height: 40px;
+    }
+    .scroll-to-top:hover {
+      background-color: #555;
+    }
+    .dark-mode {
+      background-color: #333;
+      color: #fff;
+    }
+    .dark-mode .card-header button {
+      color: #fff;
+    }
+    .dark-mode .card-header button:hover {
+      background-color: #555;
+    }
+    .dark-mode .scroll-to-top {
+      background-color: #fff;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Frequently Asked Questions</h1>
+
+    <div class="accordion" id="faqAccordion">
+
+      <!-- Question 1 -->
+      <div class="card">
+        <div class="card-header" id="question1">
+          <h2 class="mb-0">
+            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#answer1" aria-expanded="true" aria-controls="answer1">
+              Question 1: What is mental health?
+            </button>
+          </h2>
+        </div>
+
+        <div id="answer1" class="collapse show" aria-labelledby="question1" data-parent="#faqAccordion">
+          <div class="card-body">
+            <p>Mental health refers to a person's emotional, psychological, and social well-being. It affects how individuals think, feel, and act, and it helps determine how people handle stress, relate to others, and make choices.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Question 2 -->
+      <div class="card">
+        <div class="card-header" id="question2">
+          <h2 class="mb-0">
+            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#answer2" aria-expanded="true" aria-controls="answer2">
+              Question 2: How can I improve my mental health?
+            </button>
+          </h2>
+        </div>
+
+        <div id="answer2" class="collapse" aria-labelledby="question2" data-parent="#faqAccordion">
+          <div class="card-body">
+            <p>Improving mental health involves taking steps to enhance your overall well-being. Some strategies include practicing self-care, maintaining social connections, seeking support when needed, staying physically active, and managing stress effectively.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Add more questions here -->
+
+    </div>
+
+    <div class="text-center mt-4">
+      <button id="expandAllBtn" class="btn btn-primary mr-2">Expand All</button>
+      <button id="collapseAllBtn" class="btn btn-primary">Collapse All</button>
+    </div>
+
+    <div class="scroll-to-top">
+      <a href="#top">&#8593;</a>
+    </div>
+
+  </div>
+
+  <!-- Dark Mode Toggler -->
+  <div class="custom-control custom-switch" style="position: fixed; top: 20px; right: 20px; z-index: 9999;">
+    <input type="checkbox" class="custom-control-input" id="darkModeSwitch">
+    <label class="custom-control-label" for="darkModeSwitch">Dark Mode</label>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script>
+    // Smooth scrolling for anchor links
+    $(document).on('click', 'a[href^="#"]', function (event) {
+      event.preventDefault();
+      $('html, body').animate({
+        scrollTop: $($.attr(this, 'href')).offset().top
+      }, 500);
+    });
+
+    // Toggle dark mode
+    $('#darkModeSwitch').on('change', function () {
+      $('body').toggleClass('dark-mode');
+    });
+
+    // Expand all answers
+    $('#expandAllBtn').on('click', function () {
+      $('.collapse').collapse('show');
+    });
+
+    // Collapse all answers
+    $('#collapseAllBtn').on('click', function () {
+      $('.collapse').collapse('hide');
+    });
+
+    // Show/hide scroll-to-top button
+    $(window).scroll(function () {
+      if ($(this).scrollTop() > 200) {
+        $('.scroll-to-top').fadeIn();
+      } else {
+        $('.scroll-to-top').fadeOut();
+      }
+    });
+
+  </script>
+</body>
+</html>

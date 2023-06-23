@@ -1,0 +1,694 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+}
+
+.hero-section {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    background-color: black;
+    background-image: url("../../assets/closeFace.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.hero-section:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Adjust the opacity as needed */
+}
+
+.hero-section-content {
+    position: relative;
+    z-index: 1;
+}
+
+.hero-section h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: white;
+}
+
+.hero-section p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    color: white;
+}
+
+.hero-section .btn {
+    font-size: 1.2rem;
+}
+
+.section {
+    position: relative;
+    height: 100vh;
+}
+
+.section-content {
+    position: relative;
+    z-index: 1;
+}
+
+.navbar {
+    /* background-color: #6f0f0f; */
+    /* border-bottom: 1px solid #ddd; */
+    /* padding: 10px 20px; */
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    transition: opacity 0.3s ease;
+}
+
+.navbar.hidden {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.navbar .navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.navbar-toggler {
+    display: block;
+    cursor: pointer;
+    /* padding: 10px; */
+    background-color: transparent;
+    border: none;
+    z-index: 1;
+}
+
+.navbar-toggler span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: #333333;
+    margin-bottom: 5px;
+    transition: transform 0.3s ease;
+}
+
+.navbar-toggler.open span:nth-child(1) {
+    transform: translateY(6px) rotate(45deg);
+}
+
+.navbar-toggler.open span:nth-child(2) {
+    opacity: 0;
+}
+
+.navbar-toggler.open span:nth-child(3) {
+    transform: translateY(-6px) rotate(-45deg);
+}
+
+.navbar .navbar-nav {
+    margin-left: auto;
+}
+
+.navbar .navbar-nav .nav-link {
+    color: #d9d9d9;
+    font-size: 1rem;
+    margin-left: 20px;
+}
+
+.navbar .navbar-nav .nav-link:hover {
+    color: #555;
+}
+
+.scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #555;
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.scroll-to-top.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+
+
+
+
+/* WHAT IS MENTAL HEALTH SECTION *START* */
+
+section.what_is_mhealth{
+    /* background: linear-gradient(to bottom, white,white,rgb(131, 255, 100)); */
+    margin: 0 0 100px;
+}
+
+
+section.what_is_mhealth div.head{
+    text-align: center;
+}
+
+section.what_is_mhealth h4.title{
+    margin-bottom: 5px;
+}
+
+p,ul{
+    margin: 0 0 15px;
+    /* padding: 15px; */
+}
+
+section.what_is_mhealth div.main-content{
+    padding: 15px;
+}
+
+section.what_is_mhealth div.subs{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+section.what_is_mhealth div.subs div.sub-left,div.sub-right{
+    width: 98%;
+    margin-bottom: 10px;
+    padding: 15px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.573);
+}
+
+
+section.what_is_mhealth div.subs div.line{
+    width: 80%;
+    height: 2px;
+    background-color: black;
+    margin-bottom: 10px;
+}
+
+/* section.what_is_mhealth div.subs div.sub-right{
+    padding: 15px
+    width
+} */
+
+section.what_is_mhealth div.subs div.sub-right ul{
+    padding: 15px
+}
+
+@media screen and (min-width: 720px) {
+    section.what_is_mhealth div.main-content{
+        width: 85%;
+        /* background-color: greenyellow; */
+        margin: 0 auto;
+
+        text-align: center;
+    }
+
+    p.tit{
+        margin-bottom: 0;
+    }
+
+    section.what_is_mhealth div.subs{
+        width: 85%;
+        /* background-color: gold; */
+        margin: 0 auto;
+    }
+
+    section.what_is_mhealth div.subs{
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    section.what_is_mhealth div.subs div.line{
+        width: 3px;
+        height: 400px;
+        background-color: rgb(70, 70, 70);
+        border-radius: .2em;
+        /* margin-bottom: 10px; */
+    }
+
+    section.what_is_mhealth div.subs div.sub-left,div.sub-right{
+        width: 45%;
+        box-shadow: none;
+    }
+
+}
+/* WHAT IS MENTAL HEALTH END  */
+
+
+
+/* MENTAL HEALTH CONDITIONS START */
+/* lets start with mobile design first */
+
+section.mhealth_conditions div.head{
+    text-align: center;
+    margin: 20px 0;
+}
+
+section.mhealth_conditions div.cards {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+
+}
+
+section.mhealth_conditions div.cards div.card {
+    width: 93%;
+    min-width: 300px;
+
+    margin: 5px auto 15px;
+    box-shadow: 0px 0px 5px rgb(0, 0, 0, 0.6);
+    border-radius: .3em;
+    cursor: pointer;
+
+    display: flex;
+    flex-direction: column;
+}
+
+section.mhealth_conditions div.cards div.card div.img {
+    background-color: red;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 250px;
+}
+
+section.mhealth_conditions div.cards div.card div.img1{
+    background-image: url('');
+}
+
+section.mhealth_conditions div.cards div.card div.img2{
+    background-image: url('');
+}
+
+section.mhealth_conditions div.cards div.card div.img3{
+    background-image: url('');
+}
+
+section.mhealth_conditions div.cards div.card div.content {
+    padding-top: .4em;
+    padding: 15px;
+    transition: .25s ease;
+}
+
+section.mhealth_conditions div.cards div.card div.content:hover {
+    background-color: rgb(0, 0, 0, 1);
+    color: #fff;
+    cursor: copy;
+
+}
+
+section.mhealth_conditions div.cards div.card div.content div.link {
+    margin-top: 1em;
+    text-align: center;
+}
+
+section.mhealth_conditions div.cards div.card div.content div.link a {
+    text-decoration: none;
+    color: white;
+}
+
+section.mhealth_conditions div.cards div.card div.content div.link a:hover {
+    text-decoration: none;
+    color: white;
+}
+
+
+section.mhealth_conditions div.prologue {
+    width: 95%;
+    margin: 30px auto 20px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+section.mhealth_conditions div.prologue p {
+    padding: 20px;
+    text-align: center;
+}
+
+
+@media screen and (min-width: 720px) {
+
+    section.mhealth_conditions div.cards {
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    section.mhealth_conditions div.cards div.card {
+        width: 350px;
+        height: 70vh;
+    }
+
+    section.mhealth_conditions div.prologue {
+        width: 80%;
+    }
+
+}
+
+/* MENTAL HEALTH CONDITION END */
+
+
+
+
+
+
+/* PHILES'S PART START HERE */
+
+
+/* lets start with mobile design first */
+
+section.cards {
+    /* background-color: red; */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+
+}
+
+section.cards div.card {
+    /* background-color: green; */
+    /* width: 350px; */
+    width: 93%;
+    min-width: 300px;
+    /* height: 300px; */
+
+    /* padding: 10px; */
+
+    margin: 5px auto 15px;
+    box-shadow: 0px 0px 5px rgb(0, 0, 0, 0.6);
+    border-radius: .3em;
+    cursor: pointer;
+
+    display: flex;
+    flex-direction: column;
+    /* transition: 5s ease-in; */
+    /* overflow: scroll; */
+}
+
+section.cards div.card div.img {
+    background-color: red;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 250px;
+}
+
+section.cards div.card div.img1{
+    background-image: url('../assets/Sleeping-cat.jpg');
+}
+
+section.cards div.card div.img2{
+    background-image: url('../assets/Social-media.jpg');
+}
+
+section.cards div.card div.img3{
+    background-image: url('../assets/Relationships-1.jpg');
+}
+
+section.cards div.card div.img4{
+    background-image: url('../assets/Exercise-1.jpg');
+}
+
+section.cards div.card div.img5{
+    background-image: url('../assets/Nutrients.jpg');
+}
+
+section.cards div.card div.img6{
+    background-image: url('../assets/Easy-1.jpg');
+}
+
+
+section.cards div.card div.content {
+    padding-top: .4em;
+    padding: 15px;
+    transition: .25s ease;
+}
+
+section.cards div.card div.content:hover {
+    background-color: rgb(0, 0, 0, 1);
+    color: #fff;
+    cursor: copy;
+
+}
+
+section.cards div.card div.content div.link {
+    margin-top: 1em;
+    text-align: center;
+}
+
+section.cards div.card div.content div.link a {
+    text-decoration: none;
+    color: white;
+}
+
+section.cards div.card div.content div.link a:hover {
+    text-decoration: none;
+    color: white;
+}
+
+section.cards-add-none {
+    /* background-color: blue; */
+    /* display: flex; */
+    display: none;
+}
+
+/* section.cards-add::after{
+    transition: 1s ease-in;
+} */
+
+section.cards-add {
+    /* transition: 1s ease-in; */
+    display: flex;
+}
+
+div.prologue {
+    /* background-color: blue; */
+    width: 95%;
+    /* padding: 20px; */
+    margin: 30px auto 20px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+div.prologue p {
+    padding: 20px;
+}
+
+div.prologue button {
+    width: 150px;
+    height: 30px;
+}
+
+@media screen and (min-width: 720px) {
+
+    section.cards {
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    section.cards div.card {
+        width: 350px;
+        height: 70vh;
+    }
+
+    div.prologue {
+        width: 80%;
+    }
+
+}
+
+
+/* PHILES'S PART END HERE */
+
+
+
+/* FOOTER SECTION START HERE */
+.footmain{
+    width: 100vw;
+    /* height: 100vh; */
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+iframe{
+    width: 95%;
+    height: 50vh;
+    margin: 20px 0 40px;
+}
+
+.form-cont{
+    /* background-color: blue; */
+    width: 95%;
+}
+
+footer{
+    background-color: black;
+    padding-bottom: 30px;
+
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.quick-links{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+img{
+    width: 50%;
+}
+
+    
+footer ul.quick-links{
+    /* display: flex; */
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.foot-start{
+    padding: 7px;
+}
+
+.foot-start{
+    /* background-color: green; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.final-foot{
+    text-align: center;
+    /* background-color: red; */
+    margin: 0 auto 10px;
+    width: 85%;
+    font-size: .9em;
+}
+
+h6{
+    font-weight: 900;
+    /* text-align: center; */
+    color: white;
+}
+
+footer ul li{
+    list-style-type: none;
+}
+
+ul li a{
+    text-decoration: none;
+    color: rgb(205, 205, 205);
+    font-size: .9em;
+}
+
+
+
+
+
+
+
+
+@media screen and (min-width: 850px) {
+    /* Styles for large screens */
+    /* Add your CSS rules here */
+
+    .footmain{
+        padding: 30px 0 0;
+        height: 75vh;
+        /* background-color: blue; */
+        flex-direction: row;
+        margin: 0 0 30px;
+    }
+
+    iframe{
+        width: 45%;
+        height: 100%;
+        border-radius: .3em;
+    }
+    
+    .form-cont{
+        width: 40%;
+        height: 90%;
+    }
+
+    footer{
+        /* margin: 5px 0 0 ; */
+        /* padding-bottom: 10px; */
+        background-color: rgba(0, 0, 0, 0.92);
+        height: 40vh;
+        padding-bottom: 0px;
+    
+        color: white;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .quick-links{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .foot-start{
+        padding: 7px;
+        flex-direction: row;
+        
+    }
+
+    .foot-start{
+        /* background-color: green; */
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .final-foot{
+        text-align: center;
+        background-color: red;
+        margin: 0 auto 0;
+        width: 50%;
+    }
+
+}
+
+
+/* FOOTER SECTION ENDS HERE */
