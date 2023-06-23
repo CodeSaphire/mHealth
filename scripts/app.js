@@ -58,6 +58,14 @@ $(document).ready(function () {
         }, 800);
     });
 
+    $('.btn').click(function (e) {
+        // e.preventDefault();
+        var target = $(this).attr('href');
+        $('html, body').animate({
+            scrollTop: $(target).offset().top
+        }, 800);
+    });
+
     // Show/hide scroll-to-top button
     $(window).scroll(function () {
         if ($(this).scrollTop() > 100) {

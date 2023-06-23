@@ -397,6 +397,11 @@ section.mhealth_conditions div.prologue p {
 
 /* lets start with mobile design first */
 
+div#head-philes{
+    text-align: center;
+    margin-bottom: 25px;
+}
+
 section.cards {
     /* background-color: red; */
     display: flex;
