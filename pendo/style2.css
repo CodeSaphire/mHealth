@@ -1,0 +1,81 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+section.hero {
+    /* height: 100vh; */
+    /* height: 100vh; */
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    /* background-color: green; */
+    justify-content: space-around;
+    align-items: center;
+}
+
+    .container {
+        height: auto;
+        width: 90%;
+        /* border-radius: 20%; */
+        background-color:red;
+        margin: 10px;
+        box-shadow: 0 0 5px black;
+    }
+
+
+    .photo,.photo1,.photo2,.photo3,.photo4,.photo5,.photo6,.photo7 {
+        height: 60vh;
+        width: 100%;
+        box-sizing: border-box;
+        /* border-radius: 5%; */
+        background-size: cover;
+        background-position: center;
+    }
+
+    .photo{
+        background-image: url('./pic/stressed-woman-touching-his-head.jpg');
+    }
+
+    .photo1 {
+        background-image: url('./pic/Depression.jpg');
+    }
+
+    .photo2 {
+        background-image: url('./pic/disorder.jpg');
+        /* position: relative;
+        top: 100px; */
+    }
+
+    .photo3 {
+        background-image: url('./pic/eating disorders.jpg');
+    }
+
+    .photo4 {
+        background-image: url('./pic/post-traumatic.jpg');
+    }
+
+    .photo5 {
+        background-image: url('./pic/schizophrenia.jpg');
+
+    }
+
+    .photo6 {
+        background-image: url('./pic/disruptive-student.jpg');
+    }
+
+    .photo7 {
+        background-image: url('./pic/NDD_details-650x650.1.png');
+    }
+
+    .content {
+        height: 40vh;
+        flex-direction: column;
+        padding: 25px;
+        overflow: scroll;
+    }
+
+    .content p {
+        text-align: center;
+    }

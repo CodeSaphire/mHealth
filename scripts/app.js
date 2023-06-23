@@ -1,6 +1,20 @@
 $(document).ready(function () {
     var isScrolling;
 
+    $(window).scroll(function () {
+        var scrollTop = $(this).scrollTop();
+        var heroSectionHeight = $('.hero-section').outerHeight();
+
+        if (scrollTop < heroSectionHeight) {
+            $('.navbar').addClass('hero-navbar');
+            // .navbar .navbar-nav .nav-link
+            $('.navbar .navbar-nav .nav-link').css('color', 'white');
+        } else {
+            $('.navbar').removeClass('hero-navbar');
+            $('.navbar .navbar-nav .nav-link').css('color', 'black');
+        }
+    });
+
     function hideNavbar() {
         $('.navbar').addClass('hidden');
     }

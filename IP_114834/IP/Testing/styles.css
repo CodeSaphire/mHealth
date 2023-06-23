@@ -1,0 +1,211 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    /* background-color: aquamarine; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.left{
+    width: 50%;
+    /* background-color: red; */
+
+    /* top & bottom */
+    display: flex;
+    flex-direction: column;
+}
+
+.middle{
+    width: 5px;
+    height: 60vh;
+    background-color: rgb(163, 9, 9);
+    border-radius: .7em;
+}
+
+
+/* Left Begin */
+.top{
+    height: 40%;
+    /* background-color: green; */
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.hospital-info{
+    box-shadow: 2px 2px 6px black;
+    /* background-color: yellow; */
+    height: 80%;
+    width: 50%;
+    font-size: 17px;
+    font-weight: 500;
+    padding: 40px;
+    border-radius: 3.5em;
+}
+
+.hospital-info1{
+    box-shadow: 2px 2px 6px black;
+    /* background-color: yellow; */
+    height: 80%;
+    width: 40%;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 20px;
+    border-radius: 4em;
+}
+.hospital-info ul li{
+    list-style-type: none;
+}
+
+.hospital-info1 ul li{
+    list-style-type: none;
+}
+
+div.expp{
+    display: flex;
+    align-items: center;
+    height: 15%;
+    margin-left: 20px;
+    
+}
+
+div.expp h1{
+    color: black;
+}
+
+.expert div .add{
+
+}
+
+
+/* Bottom */
+div.bottom{
+    margin-top: 20px;
+    height: 40vh;
+    /* background-color: beige; */
+    /* height: 100%; */
+    display: flex;
+    flex-direction: column;
+}
+
+.testimonials{
+    border-radius: .2em;
+    box-shadow: 2px 2px 1px rgb(32, 32, 32);
+    padding: 10px;
+    /* background-color: brown; */
+    height: 1000%;
+    margin: 20px 40px 0px 20px;
+    color: black;
+}
+
+.bottom h2{
+    margin: 0 20px;
+}
+
+.testimonials ul li{
+    list-style-type: none;
+   text-align: center;
+}
+
+
+
+
+
+.right{
+    width: 50%;
+    height: 100%;
+    /* background-color: blue; */
+    
+
+    /* doctors */
+    display: flex;
+    flex-direction: column;
+}
+
+h1{
+    height: 15%;
+    color: white;
+}
+
+
+
+/* For Experts */
+
+div.exp{
+    display: flex;
+    align-items: center;
+    height: 20%;
+    margin-bottom: 10px;
+    margin-top: 20px;
+
+}
+
+.experts{
+    height: 100%;
+    /* background-color: black; */
+    color: white;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.expert{
+
+    border-radius: .2em;
+    width: 260px;
+    margin: 20px 10px 10px;
+    background-color: white;
+    height: 350px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    box-shadow: 2px 2px 6px black;
+}
+
+.expert p{
+    color: black;
+}
+
+.profile-photo{
+    margin: 10px 0;
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    background-color: red;
+}
+
+.testimonials p{
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.experts .expert .expert .name-title  {
+font-size: 30px;
+
+}
+.experts .expert .expert .contact-item{
+font-size: 15px;
+
+}
+.experts .expert .expert .specialization{
+font-size: 20px;
+
+}
+@media screen  {
+    .row {
+        flex-direction: column;
+
+    }
+    
+}

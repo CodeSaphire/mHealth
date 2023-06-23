@@ -68,7 +68,7 @@ body {
 }
 
 .navbar {
-    /* background-color: #6f0f0f; */
+    background-color: white;
     /* border-bottom: 1px solid #ddd; */
     /* padding: 10px 20px; */
     position: fixed;
@@ -78,6 +78,13 @@ body {
     z-index: 999;
     transition: opacity 0.3s ease;
 }
+
+.hero-navbar {
+    /* Add your desired styles for the navbar on the hero-section page */
+    background-color: transparent;
+    color: white;
+  }
+  
 
 .navbar.hidden {
     opacity: 0;
@@ -124,7 +131,7 @@ body {
 }
 
 .navbar .navbar-nav .nav-link {
-    color: #d9d9d9;
+    color: black;
     font-size: 1rem;
     margin-left: 20px;
 }
@@ -261,6 +268,9 @@ section.what_is_mhealth div.subs div.sub-right ul{
 
 /* MENTAL HEALTH CONDITIONS START */
 /* lets start with mobile design first */
+section.mhealth_conditions{
+    margin: 0 0 100px;
+}
 
 section.mhealth_conditions div.head{
     text-align: center;
@@ -394,6 +404,7 @@ section.cards {
     flex-direction: column;
     align-items: center;
     width: 100vw;
+    margin: 10px 0 100px;
 
 }
 
@@ -492,13 +503,14 @@ section.cards-add-none {
 section.cards-add {
     /* transition: 1s ease-in; */
     display: flex;
+    /* margin-bottom: 100px; */
 }
 
 div.prologue {
     /* background-color: blue; */
     width: 95%;
     /* padding: 20px; */
-    margin: 30px auto 20px;
+    margin: 30px auto 150px;
 
     display: flex;
     flex-direction: column;
