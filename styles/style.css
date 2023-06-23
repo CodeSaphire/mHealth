@@ -15,6 +15,7 @@
 *{
     margin: 0;
     padding: 0;
+    border:none;
     /* box-sizing: border-box; */
 }
 
@@ -270,7 +271,7 @@ section.what_is_mhealth div.subs div.sub-right ul{
         text-align: center;
     }
 
-    p.tit{
+    p.title{
         margin-bottom: 0;
     }
 
@@ -348,15 +349,15 @@ section.mhealth_conditions div.cards div.card div.img {
 }
 
 section.mhealth_conditions div.cards div.card div.img1{
-    background-image: url('');
+    background-image: url('../assets/anxiety.jpg');
 }
 
 section.mhealth_conditions div.cards div.card div.img2{
-    background-image: url('');
+    background-image: url('../assets/depression.jpg');
 }
 
 section.mhealth_conditions div.cards div.card div.img3{
-    background-image: url('');
+    background-image: url('../assets/bpd.jpg');
 }
 
 section.mhealth_conditions div.cards div.card div.content {
@@ -366,7 +367,7 @@ section.mhealth_conditions div.cards div.card div.content {
 }
 
 section.mhealth_conditions div.cards div.card div.content p.title{
-    color: red;
+    /* color: red; */
     font-family: 'Poppins';
     font-size: 1em;
     font-weight: bold;
@@ -451,8 +452,9 @@ section.mhealth_conditions div.prologue p {
 /* lets start with mobile design first */
 
 div#head-philes{
+    font-family: 'Lobster';
     text-align: center;
-    margin-bottom: 25px;
+    margin-bottom: 30px;
 }
 
 section.cards {
@@ -462,11 +464,11 @@ section.cards {
     flex-direction: column;
     align-items: center;
     width: 100vw;
-    margin: 10px 0 100px;
-
+    margin: 10px 0 10px;
 }
 
 section.cards div.card {
+    font-family: 'Diphylleia';
     /* background-color: green; */
     /* width: 350px; */
     width: 93%;
@@ -526,6 +528,12 @@ section.cards div.card div.content {
     transition: .25s ease;
 }
 
+section.cards div.card div.content p.title{
+    font-family: 'Poppins';
+    font-size: 1em;
+    font-weight: bold;
+}
+
 section.cards div.card div.content:hover {
     background-color: rgb(0, 0, 0, 1);
     color: #fff;
@@ -565,6 +573,7 @@ section.cards-add {
 }
 
 div.prologue {
+    font-family: 'Diphylleia';
     /* background-color: blue; */
     width: 95%;
     /* padding: 20px; */
@@ -578,11 +587,24 @@ div.prologue {
 
 div.prologue p {
     padding: 20px;
+    font-size: 1.1em;
+    font-weight: 600;
+    text-align: left;
 }
 
 div.prologue button {
+    background-color: white;
+    border-radius: .3em;
+    border: 1px solid black;
     width: 150px;
-    height: 30px;
+    height: 40px;
+    transition: .2s;
+    box-shadow: 0 0 5px black;
+}
+
+div.prologue button:hover {
+    background-color: black;
+    color: white;
 }
 
 @media screen and (min-width: 720px) {
@@ -609,6 +631,377 @@ div.prologue button {
 /* PHILES'S PART END HERE */
 
 
+
+/* SUPPORT & RESOURCE SECTIONS */
+
+/* Support Section */
+
+
+.support {
+    /* background-color: red; */
+    /* height: 100vh; */
+    padding: 80px 0 10px;
+    /* background-color: #f5f5f5; */
+    /* background-color: blue; */
+  }
+
+  #support{
+    /* background-color: red; */
+    padding: 0;
+    margin: 0;
+  }
+
+  .supp-contain{
+    /* background-color: red; */
+    width: 95%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .support h2 {
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 30px;
+    color: #333333;
+  }
+  
+  .support .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .resources {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    /* margin-top: 50px; */
+  }
+  
+  .resource-category {
+    width: 98%;
+    /* background-color: blue; */
+    border-radius: .4em;
+    flex: 0 0 31%;
+    margin-bottom: 50px;
+    border: 1px solid #e0e0e0;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .resource-category h3 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #333333;
+  }
+  
+  .resource-category ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: left;
+  }
+  
+  .resource-category li {
+    margin-bottom:10px;
+}  
+
+.resource-category li a {
+  font-size: 16px;
+  line-height: 24px;
+  color: #666666;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.resource-category li a:hover {
+  color: #333333;
+}
+
+.resource-category .where-to-get {
+  font-size: 14px;
+  line-height: 20px;
+  color: #999999;
+  margin-top: 20px;
+}
+
+.support-group {
+  margin-bottom: 50px;
+}
+
+.support-group h3 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #333333;
+}
+
+.support-group p {
+  font-size: 16px;
+  line-height: 24px;
+  color: #666666;
+  margin-bottom: 20px;
+}
+
+.support-group ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: left;
+}
+
+.support-group li {
+  margin-bottom: 10px;
+}
+
+.support-group li a {
+  font-size: 16px;
+  line-height: 24px;
+  color: #666666;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.support-group li a:hover {
+  color: #333333;
+}
+
+.support-hotline {
+  margin-bottom: 50px;
+}
+
+.support-hotline h3 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #333333;
+}
+
+.support-hotline p {
+  font-size: 16px;
+  line-height: 24px;
+  color: #666666;
+  margin-bottom: 20px;
+}
+
+.support-hotline ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: left;
+}
+
+.support-hotline li {
+  margin-bottom: 10px;
+}
+
+.support-hotline li a {
+  font-size: 16px;
+  line-height: 24px;
+  color: #666666;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.support-hotline li a:hover {
+  color: #333333;
+}
+
+.support-chat {
+  margin-bottom: 50px;
+}
+
+.support-chat h3 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #333333;
+}
+
+.support-chat p {
+  font-size: 16px;
+  line-height: 24px;
+  color: #666666;
+  margin-bottom: 20px;
+}
+
+.support-chat ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: left;
+}
+
+.support-chat li {
+  margin-bottom: 10px;
+}
+
+.support-chat li a {
+  font-size: 16px;
+  line-height: 24px;
+  color: #666666;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.support-chat li a:hover {
+  color: #333333;
+}
+
+@media (max-width: 768px) {
+    .resources {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-top: 50px;
+    }
+
+    .support {
+        height: 150vh;
+        padding: 80px 0;
+        background-color: #f5f5f5;
+      }
+
+      .resources {
+        display: flex;
+        align-items: center;
+        justify-content: space;
+        flex-wrap: wrap;
+        margin-top: 50px;
+      }
+}
+
+.supp-groups{
+  background-color: #14A44D;
+}
+
+.crisis{
+  background-color: #d12d36;
+}
+
+.mental-orgs{
+  background-color: #54B4D3;
+}
+
+.mental-orgs h3,.crisis h3,.supp-groups h3, .crisis ul li a, .supp-groups ul li a,.mental-orgs ul li a{
+  color: white;
+}
+
+
+.chat{
+  padding: 20px;
+  border-radius: .4em;
+  background-color: black;
+  color: white;
+}
+
+.chat h3,p{
+  margin: 0 0 10px;
+}
+
+/* Support Section End */
+
+
+
+
+
+/* Resources Section */
+
+.resources {
+    padding: 40px 0 10px;
+    background-color: #ffffff;
+  }
+
+  .res-contain{
+    /* background-color: red; */
+    width: 95%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .resources h2 {
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 30px;
+    color: #333333;
+  }
+  
+  .resources .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .resource-categories {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 50px;
+  }
+  
+  .category {
+    width: 98%;
+    /* background-color: blue; */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: .4em;
+    flex: 0 0 31%;
+    margin-bottom: 50px;
+    border: 1px solid #e0e0e0;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .category h3 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #333333;
+  }
+  
+  .category ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: left;
+  }
+  
+  .category li {
+    margin-bottom: 10px;
+  }
+  
+  .category li a {
+    font-size: 16px;
+    line-height: 24px;
+    color: #666666;
+    text-decoration: none;
+    transition: color 0.2s ease;
+  }
+  
+  .category li a:hover {
+    color: #333333;
+  }
+  
+  .category .where-to-get {
+    font-size: 14px;
+    line-height: 20px;
+    color: #999999;
+    margin-top: 20px;
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .resource-categories {
+      flex-direction: column;
+    }
+  
+    .category {
+      flex: 0 0 100%;
+      margin-bottom: 30px;
+    }
+  }
+
+  /* Resources Section End */
+
+/* SUPPORT & RESOURCE SECTION END */
 
 /* FOOTER SECTION START HERE */
 .footmain{
