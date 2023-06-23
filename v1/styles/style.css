@@ -159,10 +159,13 @@ body {
 
 
 
+
+
 /* WHAT IS MENTAL HEALTH SECTION *START* */
 
 section.what_is_mhealth{
-    background: linear-gradient(to bottom, white,white,rgb(131, 255, 100));
+    /* background: linear-gradient(to bottom, white,white,rgb(131, 255, 100)); */
+    margin: 0 0 100px;
 }
 
 
