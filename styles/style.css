@@ -65,7 +65,8 @@ body {
 
 .hero-section p {
     font-family: 'Diphylleia';
-    font-size: 1.5rem;
+    font-size: 1.2rem;
+    font-style:italic;
     margin-bottom: 2rem;
     color: white;
 }
@@ -324,6 +325,7 @@ section.mhealth_conditions div.cards {
 }
 
 section.mhealth_conditions div.cards div.card {
+    font-family: 'Diphylleia';
     width: 93%;
     min-width: 300px;
     margin: 5px auto 15px;
@@ -362,6 +364,11 @@ section.mhealth_conditions div.cards div.card div.content {
     transition: .25s ease;
 }
 
+section.mhealth_conditions div.cards div.card div.content p.title{
+    color: red;
+    
+}
+
 section.mhealth_conditions div.cards div.card div.content:hover {
     background-color: rgb(0, 0, 0, 1);
     color: #fff;
@@ -396,6 +403,10 @@ section.mhealth_conditions div.prologue {
 }
 
 section.mhealth_conditions div.prologue p {
+    font-family: 'Diphylleia';
+    font-size: 1.1em;
+    font-weight: 600;
+    color: #000000;
     padding: 20px;
     text-align: center;
 }
