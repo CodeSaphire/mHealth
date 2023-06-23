@@ -328,6 +328,7 @@ section.mhealth_conditions div.cards {
 section.mhealth_conditions div.cards div.card {
     font-family: 'Diphylleia';
     width: 93%;
+    height: 700px;
     min-width: 300px;
     margin: 5px auto 15px;
     box-shadow: 0px 0px 5px rgb(0, 0, 0, 0.6);
@@ -430,7 +431,12 @@ section.mhealth_conditions div.prologue p {
 
     section.mhealth_conditions div.cards div.card {
         width: 350px;
-        height: 70vh;
+        height: 500px;
+    }
+
+
+    section.mhealth_conditions div.cards div.card div.content {
+        height: 300px;
     }
 
     section.mhealth_conditions div.prologue {
@@ -618,7 +624,12 @@ div.prologue button:hover {
 
     section.cards div.card {
         width: 350px;
-        height: 70vh;
+        height: 500px;
+    }
+
+    section.cards div.card div.content{
+
+        height: 300px;
     }
 
     div.prologue {
@@ -639,8 +650,9 @@ div.prologue button:hover {
 
 .support {
     /* background-color: red; */
-    /* height: 100vh; */
+    height: 100vh;
     padding: 80px 0 10px;
+    /* margin-bottom: 50px; */
     /* background-color: #f5f5f5; */
     /* background-color: blue; */
   }
@@ -659,9 +671,10 @@ div.prologue button:hover {
   }
   
   .support h2 {
-    font-size: 40px;
+    font-family: 'Lobster';
+    font-size: 2r.3em;
     font-weight: 700;
-    margin-bottom: 30px;
+    margin-bottom: 70px;
     color: #333333;
   }
   
@@ -670,11 +683,12 @@ div.prologue button:hover {
     margin: 0 auto;
   }
   
-  .resources {
+section.support div.container div.resources {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     /* margin-top: 50px; */
+    /* background-color: red; */
   }
   
   .resource-category {
@@ -908,23 +922,27 @@ div.prologue button:hover {
 
 /* Resources Section */
 
-.resources {
+section.resources{
     padding: 40px 0 10px;
-    background-color: #ffffff;
+    /* background-color: #ffffff; */
+    background-color: rgb(34, 34, 34);
+    margin-bottom: 20px;
   }
 
   .res-contain{
-    /* background-color: red; */
+    background-color: transparent;
     width: 95%;
     margin: 0 auto;
     text-align: center;
   }
   
   .resources h2 {
+    font-family: 'Lobster';
     font-size: 40px;
     font-weight: 700;
     margin-bottom: 30px;
-    color: #333333;
+    /* color: #333333; */
+    color: #fff;
   }
   
   .resources .container {
@@ -949,13 +967,16 @@ div.prologue button:hover {
     border: 1px solid #e0e0e0;
     padding: 20px;
     text-align: center;
-  }
+    background-color: white;
+}
   
   .category h3 {
+    font-family: 'Lobster';
     font-size: 24px;
     font-weight: 600;
     margin-bottom: 20px;
     color: #333333;
+    /* color: #fff; */
   }
   
   .category ul {
@@ -973,12 +994,14 @@ div.prologue button:hover {
     font-size: 16px;
     line-height: 24px;
     color: #666666;
+    /* color: #fff; */
     text-decoration: none;
     transition: color 0.2s ease;
   }
   
   .category li a:hover {
     color: #333333;
+    /* color: #000000; */
   }
   
   .category .where-to-get {
@@ -1023,6 +1046,7 @@ iframe{
 .form-cont{
     /* background-color: blue; */
     width: 95%;
+    font-family: 'Noto Sans';
 }
 
 footer{
@@ -1046,6 +1070,7 @@ img{
     
 footer ul.quick-links{
     /* display: flex; */
+    /* font-family: 'Noto Sans'; */
     flex-direction: column;
     flex-wrap: wrap;
 }
@@ -1056,12 +1081,14 @@ footer ul.quick-links{
 
 .foot-start{
     /* background-color: green; */
+    font-family: '';
     display: flex;
     flex-direction: column;
     justify-content: space-around;
 }
 
 .final-foot{
+    font-family: 'Noto Sans';
     text-align: center;
     /* background-color: red; */
     margin: 0 auto 10px;
@@ -1140,7 +1167,9 @@ ul li a{
 
     .foot-start{
         /* background-color: green; */
+        font-family: 'Noto Sans';
         display: flex;
+        height: 60%;
         justify-content: space-around;
     }
 
