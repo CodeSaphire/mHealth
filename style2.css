@@ -17,10 +17,11 @@ section.hero {
 
     .container {
         height: 100%;
-        width: 100%;
+        width: 90%;
         /* border-radius: 20%; */
         /* background-color:white; */
-        margin-bottom: 10px
+        /* margin-bottom: 10px */
+        margin: 10px auto;
     }
 
 
@@ -43,8 +44,8 @@ section.hero {
 
     .photo2 {
         background-image: url('./pic/disorder.jpg');
-        position: relative;
-        top: 100px;
+        /* position: relative;
+        top: 100px; */
     }
 
     .photo3 {
@@ -69,12 +70,14 @@ section.hero {
     }
 
     .content {
-        height: 40vh;
+        /* height: 40vh; */
         flex-direction: column;
         padding: 25px;
         /* overflow: scroll; */
     }
 
     .content p {
-        text-align: center;
+        text-align: left;
+        margin-bottom: 10px;
+        margin-top: 10px;
     }
