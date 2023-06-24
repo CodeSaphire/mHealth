@@ -328,7 +328,7 @@ section.mhealth_conditions div.cards {
 section.mhealth_conditions div.cards div.card {
     font-family: 'Diphylleia';
     width: 93%;
-    height: 700px;
+    height: 500px;
     min-width: 300px;
     margin: 5px auto 15px;
     box-shadow: 0px 0px 5px rgb(0, 0, 0, 0.6);
