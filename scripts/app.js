@@ -86,6 +86,7 @@ $(document).ready(function () {
     // Hamburger menu toggle
     $('.navbar-toggler').click(function () {
         $(this).toggleClass('open');
+        $('.navbar-collapse').toggleClass('open');
         $('.navbar-collapse').slideToggle();
     });
 });
