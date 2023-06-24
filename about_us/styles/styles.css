@@ -1,85 +1,25 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500;600;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caprasimo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Diphylleia&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap');
+/*General*/
+
+
+
+
 *{
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
-
-.navbar {
-    background-color: white;
-    height: 50px;
-    /* border-bottom: 1px solid #ddd; */
-    /* padding: 10px 20px; */
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 999;
-    transition: opacity 0.3s ease;
-}
-
-.hero-navbar {
-    /* Add your desired styles for the navbar on the hero-section page */
-    background-color: transparent;
-    color: white;
-  }
-  
-
-.navbar.hidden {
-    opacity: 0;
-    visibility: hidden;
-}
-
-.navbar .navbar-brand {
-    font-family: 'Dancing Script';
-    font-size: 1.5rem;
-    font-weight: 700;
-}
-
-.navbar-toggler {
-    display: block;
-    cursor: pointer;
-    /* padding: 10px; */
-    background-color: transparent;
-    border: none;
-    z-index: 1;
-}
-
-.navbar-toggler span {
-    display: block;
-    width: 25px;
-    height: 3px;
-    background-color: #333333;
-    margin-bottom: 5px;
-    transition: transform 0.3s ease;
-}
-
-.navbar-toggler.open span:nth-child(1) {
-    transform: translateY(6px) rotate(45deg);
-}
-
-.navbar-toggler.open span:nth-child(2) {
-    opacity: 0;
-}
-
-.navbar-toggler.open span:nth-child(3) {
-    transform: translateY(-6px) rotate(-45deg);
-}
-
-.navbar .navbar-nav {
-    margin-left: auto;
-}
-
-.navbar .navbar-nav .nav-link {
-    font-family: 'Noto Sans';
-    color: black;
-    font-size: 1rem;
-    margin-left: 20px;
-}
-
-.navbar .navbar-nav .nav-link:hover {
-    color: #555;
-}
-
 
 div.hero-section{
     height: 100vh;
@@ -102,6 +42,7 @@ div.parAbt{
 
 div.main-content{
     /* background-color: gold; */
+    font-family: 'Lato';
     height: 25%;
     width: 85%;
     text-align: center;
@@ -112,6 +53,7 @@ div.main-content{
 
 div.subs{
     /* background-color: aquamarine; */
+    font-family: 'Lato';
     width: 85%;
     height: 60%;
     display: flex;
@@ -136,6 +78,7 @@ p.sub-para{
 }
 
 div.parAbt div.head{
+    font-family: 'Lobster';
     height: 10%;
     /* background-color: green; */
     display: flex;
@@ -143,6 +86,7 @@ div.parAbt div.head{
 }
 
 section.part{
+    font-family: 'Lobster';
     background-color: black;
     color: white;
 
@@ -155,6 +99,7 @@ section.part{
 
 
 div.partners{
+    /* font-family: 'Lobster'; */
     display: flex;
     flex-wrap: wrap;
 }
@@ -195,6 +140,7 @@ div.pic5{
 /* Achievement */
 
 section.achievement{
+    font-family: 'Diphylleia';
     /* background-color: beige; */
     height: 100vh;
     width: 100vw;
@@ -203,6 +149,7 @@ section.achievement{
 }
 
 section.achievement div.head{
+    font-family: 'Lobster';
     height: 20vh;
     /* background-color: rgb(233, 255, 33); */
     text-align: center;
@@ -273,6 +220,11 @@ div.arc2{
     width: 70%;
     margin: 20px auto;
     text-align: center;
+}
+
+div.arc2 p{
+    color: black;
+    font-weight: 600;
 }
 
 footer{
