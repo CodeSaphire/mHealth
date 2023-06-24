@@ -144,7 +144,7 @@ section.what_is_mhealth h4.title{
     font-family: 'Poppins';
     font-weight: bold;
     font-size: 1em;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
 }
 
 p,ul{
@@ -167,13 +167,14 @@ section.what_is_mhealth div.subs{
 
 section.what_is_mhealth div.subs div.sub-left,div.sub-right{
     width: 98%;
-    margin-bottom: 10px;
+    margin: 20px 0 20px;
     padding: 15px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.573);
 }
 
 
 section.what_is_mhealth div.subs div.line{
+    display: none;
     width: 80%;
     height: 2px;
     background-color: black;
@@ -214,14 +215,17 @@ section.what_is_mhealth div.subs div.sub-right ul{
     }
 
     section.what_is_mhealth div.subs div.line{
+        display: flex;
+        margin: 27px 0 30px;
         width: 3px;
-        height: 400px;
+        height: 350px;
         background-color: rgb(70, 70, 70);
         border-radius: .2em;
         /* margin-bottom: 10px; */
     }
 
     section.what_is_mhealth div.subs div.sub-left,div.sub-right{
+        margin: 25px 0 25px;
         width: 45%;
         box-shadow: none;
     }
@@ -257,7 +261,7 @@ section.mhealth_conditions div.cards div.card {
     width: 93%;
     height: 500px;
     min-width: 300px;
-    margin: 5px auto 15px;
+    margin: 5px auto 50px;
     box-shadow: 0px 0px 5px rgb(0, 0, 0, 0.6);
     border-radius: .3em;
     cursor: pointer;
@@ -359,6 +363,7 @@ section.mhealth_conditions div.prologue p {
     section.mhealth_conditions div.cards div.card {
         width: 350px;
         height: 500px;
+        margin: 5px auto 5px;
     }
 
 
