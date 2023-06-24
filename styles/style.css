@@ -415,7 +415,7 @@ section.cards div.card {
 
     /* padding: 10px; */
 
-    margin: 5px auto 15px;
+    margin: 20px auto 50px;
     box-shadow: 0px 0px 5px rgb(0, 0, 0, 0.6);
     border-radius: .3em;
     cursor: pointer;
@@ -557,6 +557,7 @@ div.prologue button:hover {
     section.cards div.card {
         width: 350px;
         height: 500px;
+        margin: 5px auto 5px;
     }
 
     section.cards div.card div.content{
