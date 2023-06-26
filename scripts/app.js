@@ -8,7 +8,7 @@ $(document).ready(function () {
         if (scrollTop < heroSectionHeight) {
             $('.navbar').addClass('hero-navbar');
             // .navbar .navbar-nav .nav-link
-            $('.navbar .navbar-nav .nav-link').css('color', 'white');
+            $('.navbar .navbar-nav .nav-link').css('color', 'black');
         } else {
             $('.navbar').removeClass('hero-navbar');
             $('.navbar .navbar-nav .nav-link').css('color', 'black');

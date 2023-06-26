@@ -10,6 +10,10 @@ body {
     padding: 40px 20px;
 }
 
+nav{
+    position: fixed;
+}
+
 h1 {
     font-size: 28px;
     font-weight: bold;
@@ -74,5 +78,5 @@ h1 {
 }
 
 .scroll-to-top:hover {
-    background-color: #555;
+    background-color: #222222;
 }

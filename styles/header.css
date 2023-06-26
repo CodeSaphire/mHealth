@@ -92,6 +92,12 @@
     color: #555;
 }
 
+.navbar-collapse{
+    background-color: transparent;
+}
+
 .navbar-collapse.open{
     background: linear-gradient(to right, relative,transparent);
+    background-color: aliceblue;
+    width: 100vw;
 }

@@ -21,6 +21,10 @@
     margin: 0;
 }
 
+nav{
+    position: fixed;
+}
+
 div.hero-section{
     height: 100vh;
     width: 100vw;

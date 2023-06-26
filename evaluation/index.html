@@ -1,13 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../styles/header.css">
   <title>Mental Health Evaluation</title>
 </head>
+
 <body>
+  <nav class="navbar navbar-expand-lg">
+    <a class="navbar-brand" href="../index.html">mHealth</a>
+    <div class="navbar-toggler">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="../index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../about_us/index.html">About Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../index.html#support">Help</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../index.html#footer">Contact</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../faq/index.html">Faq</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
   <div class="container">
     <h1 class="mt-4 mb-4">Mental Health Evaluation</h1>
     <form id="evaluationForm">
@@ -67,7 +97,8 @@
         </div>
       </div>
       <div class="form-group">
-        <label>Question 6: Do you experience physical symptoms like headaches or stomachaches without any medical cause?</label><br>
+        <label>Question 6: Do you experience physical symptoms like headaches or stomachaches without any medical
+          cause?</label><br>
         <div class="form-check form-check-inline">
           <input class="form-check-input" type="radio" name="question6" id="question6Yes" value="yes">
           <label class="form-check-label" for="question6Yes">Yes</label>
@@ -78,7 +109,8 @@
         </div>
       </div>
       <div class="form-group">
-        <label>Question 7: Have you experienced a loss or significant life event recently that has affected your well-being?</label><br>
+        <label>Question 7: Have you experienced a loss or significant life event recently that has affected your
+          well-being?</label><br>
         <div class="form-check form-check-inline">
           <input class="form-check-input" type="radio" name="question7" id="question7Yes" value="yes">
           <label class="form-check-label" for="question7Yes">Yes</label>
@@ -121,11 +153,14 @@
           <label class="form-check-label" for="question10No">No</label>
         </div>
       </div>
-      
+
       <button type="submit" class="btn btn-primary">Submit</button>
     </form>
     <div id="result" class="mt-4"></div>
   </div>
+  <script src="../scripts/jquery.js"></script>
   <script src="script.js"></script>
+  <script src="../scripts/app.js"></script>
 </body>
+
 </html>
