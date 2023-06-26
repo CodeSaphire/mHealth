@@ -7,9 +7,16 @@ $(document).ready(function () {
 
         if (scrollTop < heroSectionHeight) {
             $('.navbar').addClass('hero-navbar');
+            console.log('Scroll-Top : ',scrollTop,'Hero Section Height : ',heroSectionHeight);
             // .navbar .navbar-nav .nav-link
-            $('.navbar .navbar-nav .nav-link').css('color', 'black');
+            $('.navbar .navbar-nav .nav-link').css('color', 'white');
+
+            if ($(window).width() < 720) {
+                console.log($(window).width())
+                $('.navbar .navbar-nav .nav-link').css('color', 'black');
+            }
         } else {
+            console.log('Scroll-Top : ',scrollTop,'Hero Section Height : ',heroSectionHeight);
             $('.navbar').removeClass('hero-navbar');
             $('.navbar .navbar-nav .nav-link').css('color', 'black');
         }
