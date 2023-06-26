@@ -33,11 +33,11 @@ function evaluateResponses(responses) {
   }
 
   if (yesCount >= 5) {
-    return "High Risk";
+    return "High Risk. Please contact Health specialists immediately";
   } else if (yesCount >= 3) {
-    return "Moderate Risk";
+    return "Moderate Risk, you should consider seeing a specialist";
   } else {
-    return "Low Risk";
+    return "Low Risk. Please ";
   }
 }
   
